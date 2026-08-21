@@ -1,0 +1,378 @@
+<title>Alter Primeiro ou Manaus Primeiro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --negro:#14201f;
+  --home-bg:#14201f;
+  --home-fg:#eaf2ef;
+  --on-accent:#ffffff;
+  --ground:#edf1ef;
+  --surface:#f7faf8;
+  --surface-2:#e3eae7;
+  --line:#c9d6d1;
+  --line-soft:#dbe4e0;
+  --text:#14201f;
+  --text-2:#4d605b;
+  --text-3:#6f817c;
+  --tapajos:#0f6f68;
+  --tapajos-ink:#0b544f;
+  --silt:#a86a2c;
+  --silt-soft:#f0e2cf;
+  --good:#1f6b45;
+  --warn:#9a5b12;
+  --bad:#96342c;
+  --shadow:0 1px 2px rgba(20,32,31,.06), 0 8px 24px -16px rgba(20,32,31,.35);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0c1413;
+    --home-bg:#03302c;
+    --home-fg:#c9ece5;
+    --on-accent:#062421;
+    --surface:#141e1c;
+    --surface-2:#1b2725;
+    --line:#2c3b38;
+    --line-soft:#223330;
+    --text:#dde7e3;
+    --text-2:#9fb2ac;
+    --text-3:#7d918b;
+    --tapajos:#4fb5a8;
+    --tapajos-ink:#7fcfc3;
+    --silt:#d3a065;
+    --silt-soft:#33281a;
+    --good:#5fbb8b;
+    --warn:#d3a065;
+    --bad:#e08b80;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0c1413;
+  --home-bg:#03302c;
+  --home-fg:#c9ece5;
+  --on-accent:#062421;
+  --surface:#141e1c;
+  --surface-2:#1b2725;
+  --line:#2c3b38;
+  --line-soft:#223330;
+  --text:#dde7e3;
+  --text-2:#9fb2ac;
+  --text-3:#7d918b;
+  --tapajos:#4fb5a8;
+  --tapajos-ink:#7fcfc3;
+  --silt:#d3a065;
+  --silt-soft:#33281a;
+  --good:#5fbb8b;
+  --warn:#d3a065;
+  --bad:#e08b80;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--text);
+  font-family:"Karla","Helvetica Neue",Arial,sans-serif;
+  font-size:16.5px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px 96px}
+h1,h2,h3{font-family:"Newsreader",Georgia,"Times New Roman",serif;font-weight:500;text-wrap:balance;margin:0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+
+/* ---------- masthead ---------- */
+.masthead{padding:64px 0 36px;border-bottom:1px solid var(--line)}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--tapajos);margin:0 0 18px;display:flex;gap:14px;flex-wrap:wrap;align-items:center
+}
+.eyebrow .dot{width:4px;height:4px;border-radius:50%;background:var(--silt);display:inline-block}
+h1{font-size:clamp(2.4rem,6vw,3.9rem);line-height:1.04;letter-spacing:-.02em}
+h1 em{font-style:italic;color:var(--tapajos)}
+.standfirst{margin:20px 0 0;max-width:60ch;font-size:1.09rem;color:var(--text-2)}
+
+/* two-river rule: the page's one recurring motif */
+.rivers{height:5px;display:flex;margin:30px 0 0;border-radius:3px;overflow:hidden}
+.rivers i{display:block;height:100%}
+.rivers i:first-child{flex:3;background:linear-gradient(90deg,var(--home-bg),var(--tapajos-ink))}
+.rivers i:last-child{flex:2;background:linear-gradient(90deg,var(--silt),var(--warn))}
+
+/* ---------- generic blocks ---------- */
+section{padding:52px 0 0}
+h2{font-size:clamp(1.5rem,3.2vw,2rem);letter-spacing:-.01em}
+h2 .num{
+  font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--text-3);
+  letter-spacing:.14em;display:block;margin-bottom:8px;font-weight:500
+}
+h3{font-size:1.18rem}
+p{margin:14px 0}
+a{color:var(--tapajos-ink);text-underline-offset:3px}
+strong{font-weight:700}
+
+.callout{
+  background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--silt);
+  border-radius:4px;padding:18px 20px;margin:26px 0;box-shadow:var(--shadow)
+}
+.callout .tag{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--silt);display:block;margin-bottom:6px
+}
+.callout p{margin:0}
+.callout p + p{margin-top:10px}
+
+/* ---------- route strip ---------- */
+.route{
+  display:flex;align-items:stretch;gap:0;overflow-x:auto;padding:4px 0 10px;
+  scrollbar-width:thin
+}
+.leg{display:flex;align-items:center;gap:0;flex:0 0 auto}
+.node{
+  font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:.95rem;letter-spacing:.06em;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:4px;
+  padding:7px 11px;white-space:nowrap
+}
+.node.home{background:var(--home-bg);color:var(--home-fg);border-color:var(--home-bg)}
+.node.stay{background:var(--tapajos);color:var(--on-accent);border-color:var(--tapajos)}
+.arm{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:74px;padding:0 6px}
+.arm .lbl{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--text-3);letter-spacing:.06em;white-space:nowrap}
+.arm .bar{height:2px;width:100%;background:var(--line);margin:5px 0 4px}
+.arm.direct .bar{background:var(--tapajos)}
+.arm .dur{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--text-3)}
+
+/* ---------- option cards ---------- */
+.opt{
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;
+  padding:24px;margin:22px 0;box-shadow:var(--shadow)
+}
+.opt.pick{border-color:var(--tapajos);border-width:1.5px}
+.opt-head{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.badge{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  padding:4px 9px;border-radius:3px;white-space:nowrap
+}
+.badge.pick{background:var(--tapajos);color:var(--on-accent)}
+.badge.alt{background:var(--surface-2);color:var(--text-2);border:1px solid var(--line)}
+.badge.no{background:var(--silt-soft);color:var(--warn)}
+.opt h3{font-size:1.3rem}
+.opt .why{color:var(--text-2);margin:10px 0 18px;max-width:66ch}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:8px 26px;margin-top:16px}
+@media(max-width:640px){.pc{grid-template-columns:1fr}}
+.pc ul{margin:0;padding:0;list-style:none}
+.pc li{padding-left:20px;position:relative;font-size:.95rem;color:var(--text-2);margin:5px 0}
+.pc li::before{position:absolute;left:0;font-family:"IBM Plex Mono",monospace;font-weight:600}
+.pc .up li::before{content:"+";color:var(--good)}
+.pc .down li::before{content:"–";color:var(--bad)}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.93rem}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line-soft)}
+thead th{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-3);font-weight:500;background:var(--surface-2);border-bottom:1px solid var(--line)
+}
+tbody tr:last-child td{border-bottom:none}
+td.t{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.co{font-weight:500}
+
+/* ---------- itinerary ---------- */
+.days{list-style:none;padding:0;margin:22px 0 0;border-left:2px solid var(--line);}
+.days li{position:relative;padding:0 0 22px 26px}
+.days li::before{
+  content:"";position:absolute;left:-6px;top:9px;width:10px;height:10px;border-radius:50%;
+  background:var(--ground);border:2px solid var(--tapajos)
+}
+.days li.move::before{background:var(--tapajos)}
+.days .d{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3)}
+.days .b{display:block;margin-top:2px}
+
+/* ---------- tactics ---------- */
+.tactics{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:22px}
+.tactic{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 18px 20px}
+.tactic .k{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;color:var(--silt);text-transform:uppercase}
+.tactic h3{font-size:1.02rem;margin:7px 0 6px}
+.tactic p{margin:0;font-size:.93rem;color:var(--text-2)}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:24px 0}
+.fact{background:var(--surface);padding:16px 18px}
+.fact .k{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;color:var(--text-3);text-transform:uppercase}
+.fact .v{font-family:"Newsreader",serif;font-size:1.45rem;margin-top:4px;line-height:1.15}
+.fact .s{font-size:.85rem;color:var(--text-2);margin-top:3px}
+
+footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:var(--text-3);font-size:.86rem}
+</style>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow"><span>Sex 06 nov → Dom 15 nov 2026</span><span class="dot"></span><span>São Paulo · GRU</span><span class="dot"></span><span>9 noites</span></p>
+  <h1>Alter primeiro<br>ou <em>Manaus primeiro?</em></h1>
+  <p class="standfirst">Não existe voo direto de São Paulo para Santarém. Toda a diferença de preço e de tempo está em <em>qual</em> escala você usa e em <em>que ordem</em> encaixa as duas pontas. A resposta curta: use Manaus como seu único hub, faça Alter do Chão primeiro, e volte de Manaus sem escala.</p>
+  <div class="rivers"><i></i><i></i></div>
+</header>
+
+<section>
+  <div class="callout">
+    <span class="tag">Antes de comprar — confira a data</span>
+    <p><strong>05/11/2026 é uma quinta-feira, não sexta.</strong> A sexta é 06/11 e o sábado 07/11. O retorno em 15/11 é domingo, esse está certo.</p>
+    <p>Se der para sair mesmo na <strong>quinta 05/11 à noite</strong>, aproveite: quinta é historicamente a noite mais barata da semana para o trecho São Paulo–Manaus, e você ganha um dia inteiro no destino. Todo o plano abaixo simplesmente anda um dia para trás.</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">01 — O mapa do problema</span>Santarém só tem cinco rotas no mundo</h2>
+  <p>Alter do Chão se acessa por Santarém (STM), a 38 km. O aeroporto de Santarém recebe cerca de 42 voos por semana, de exatamente cinco origens. É isso que faz o preço parecer absurdo: não é um mercado com concorrência, é uma ponta fina.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Origem direta para STM</th><th>Companhias</th><th>Frequência</th><th>Serve como escala?</th></tr></thead>
+      <tbody>
+        <tr><td class="co">Belém (BEL)</td><td>Azul, Gol</td><td class="t">~21 /sem</td><td>Sim — a mais grossa</td></tr>
+        <tr><td class="co">Manaus (MAO)</td><td>Azul, Gol</td><td class="t">~12 /sem</td><td>Sim — e é o seu destino</td></tr>
+        <tr><td class="co">Brasília (BSB)</td><td>LATAM</td><td class="t">3 /sem</td><td>Sim — único red-eye até STM</td></tr>
+        <tr><td class="co">Belo Horizonte (CNF)</td><td>Azul</td><td class="t">3 /sem</td><td>Rota nova, desde set/2026</td></tr>
+        <tr><td class="co">Porto Trombetas (TMT)</td><td>Azul</td><td class="t">~4 /sem</td><td>Não</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>De São Paulo, portanto, <strong>a escala é obrigatória</strong> — a pergunta não é "se", é "onde". E há um detalhe que muda o cálculo: sair de Viracopos está fora, e a operação da Azul para Manaus a partir de São Paulo é basicamente VCP. Na prática você fica com <strong>Gol e LATAM no trecho tronco GRU–MAO</strong>, que ainda assim é uma rota gorda: 18 voos por semana, ~3 por dia. A Azul volta a ser opção se a escala for Belém.</p>
+</section>
+
+<section>
+  <h2><span class="num">02 — As três formas de montar</span>Compare pelo dia da volta, não pelo da ida</h2>
+  <p>O domingo 15/11 é o trecho caro da viagem. É nele que a estrutura do roteiro se paga ou se perde.</p>
+
+  <article class="opt pick">
+    <div class="opt-head"><span class="badge pick">Recomendado</span><h3>Manaus como hub nos dois sentidos</h3></div>
+    <div class="route">
+      <div class="leg"><span class="node home">GRU</span><span class="arm direct"><span class="lbl">Gol / LATAM</span><span class="bar"></span><span class="dur">3h55 direto</span></span><span class="node">MAO</span><span class="arm direct"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h45</span></span><span class="node stay">STM · Alter</span><span class="arm direct"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h45</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">Gol / LATAM</span><span class="bar"></span><span class="dur">3h55 direto</span></span><span class="node home">GRU</span></div>
+    </div>
+    <p class="why">Você atravessa Manaus na ida sem dormir lá, faz Alter do Chão primeiro, volta para Manaus e fica. As duas pontas São Paulo são sempre o mesmo voo direto e barato, e o domingo é um voo só.</p>
+    <div class="pc">
+      <ul class="up">
+        <li>Volta de domingo sem escala: sai 18h25, pousa em Guarulhos 23h10</li>
+        <li>GRU–MAO é rota tronco com 3 voos/dia — é onde o preço compete</li>
+        <li>Dá para comprar como dois bilhetes separados (ver seção 04)</li>
+        <li>Novembro é seca no Tapajós: as praias de Alter estão no auge logo na chegada</li>
+      </ul>
+      <ul class="down">
+        <li>O sábado da ida é dia de deslocamento inteiro</li>
+        <li>Conexão em Manaus de ~2h25 no mesmo aeroporto (bagagem pode não ser through se forem bilhetes separados)</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="opt">
+    <div class="opt-head"><span class="badge alt">Se quiser o voo noturno de sexta</span><h3>Red-eye por Brasília, volta por Manaus</h3></div>
+    <div class="route">
+      <div class="leg"><span class="node home">GRU</span><span class="arm"><span class="lbl">LATAM</span><span class="bar"></span><span class="dur">1h40</span></span><span class="node">BSB</span><span class="arm"><span class="lbl">LATAM · 3×/sem</span><span class="bar"></span><span class="dur">2h35 noturno</span></span><span class="node stay">STM · Alter</span><span class="arm direct"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h45</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">Gol / LATAM</span><span class="bar"></span><span class="dur">3h55 direto</span></span><span class="node home">GRU</span></div>
+    </div>
+    <p class="why">É o único jeito de dormir voando e acordar em Alter do Chão. O BSB–STM da LATAM sai entre 21h50 e 23h50 e pousa em Santarém de madrugada. Você chega na pousada por volta das 3h e ganha o sábado inteiro na praia.</p>
+    <div class="pc">
+      <ul class="up">
+        <li>Atende exatamente sua preferência de voo noturno na sexta</li>
+        <li>Ganha um dia cheio comparado ao plano recomendado</li>
+        <li>GRU–BSB tem voo quase de hora em hora — fácil de encaixar</li>
+        <li>Itinerário LATAM inteiro na ida: um bilhete, bagagem despachada até STM</li>
+      </ul>
+      <ul class="down">
+        <li><strong>Só 3× por semana</strong> — precisa confirmar se opera na sexta 06/11</li>
+        <li>Chegada às 3h da manhã: reserve transfer antecipado e diária desde a noite anterior</li>
+        <li>Ida e volta por aeroportos diferentes = tarifa de trecho múltiplo, nem sempre mais barata</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="opt">
+    <div class="opt-head"><span class="badge no">Evite</span><h3>Manaus primeiro, terminando em Santarém</h3></div>
+    <div class="route">
+      <div class="leg"><span class="node home">GRU</span><span class="arm direct"><span class="lbl">Gol / LATAM</span><span class="bar"></span><span class="dur">3h55 direto</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h45</span></span><span class="node stay">STM · Alter</span><span class="arm"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h25</span></span><span class="node">BEL</span><span class="arm"><span class="lbl">LATAM / Gol</span><span class="bar"></span><span class="dur">3h25</span></span><span class="node home">GRU</span></div>
+    </div>
+    <p class="why">Parece simétrico, mas joga a conexão para o domingo. Você troca um voo direto de 3h55 por uma volta de 8 a 11 horas porta a porta, no dia mais caro, e com pouquíssimo voo de recuperação se algo atrasar — Santarém tem só ~3 partidas por dia para Belém e ~1,3 por dia para Manaus.</p>
+    <div class="pc">
+      <ul class="up">
+        <li>Ida simples: GRU–MAO direto de manhã de sábado, 07h50 → 10h50</li>
+      </ul>
+      <ul class="down">
+        <li>Volta com escala no domingo caro — é onde a tarifa explode</li>
+        <li>Último dia perdido em aeroporto</li>
+        <li>Risco de perder a conexão numa ponta fina, sem voo alternativo no mesmo dia</li>
+      </ul>
+    </div>
+  </article>
+
+  <div class="callout">
+    <span class="tag">Variante que vale considerar</span>
+    <p>Se a escala em <strong>Belém</strong> aparecer bem mais barata que Brasília, saiba que os voos BEL→STM saem em três blocos: ~02h00, ~13h15 e ~21h55. Um red-eye GRU→BEL pousa entre 01h30 e 03h15 — ou seja, você perde o das 2h por minutos e espera até as 13h. A saída é sair de São Paulo no <em>fim da tarde</em> de sexta, pousar em Belém à noite, e pegar o BEL→STM das 02h00 (chega 03h25). Ou transformar a espera em passeio: day-use perto do aeroporto, Ver-o-Peso e Estação das Docas de manhã, e voar às 13h15.</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">03 — O roteiro recomendado, dia a dia</span>Quatro noites em cada ponta</h2>
+  <p>Horários abaixo são os da malha publicada e servem para desenhar o roteiro — confirme cada um na data exata antes de emitir.</p>
+  <ul class="days">
+    <li class="move"><span class="d">Sáb 07/11 · deslocamento</span><span class="b"><strong class="mono">GRU 07:50 → MAO 10:50</strong> (LATAM/Gol, direto). Conexão de 2h25. <strong class="mono">MAO 13:15 → STM 16:00</strong> (Azul). Transfer 45 min e você chega em Alter do Chão a tempo do pôr do sol na Ilha do Amor.</span></li>
+    <li><span class="d">Dom 08 – Ter 10/11 · Alter do Chão</span><span class="b">Quatro noites. Novembro é vazante do Tapajós: as praias de areia branca estão todas expostas, é a melhor época do ano. Dá para encaixar Lago Verde, Ponta de Pedras e um dia na Floresta Nacional do Tapajós.</span></li>
+    <li class="move"><span class="d">Qua 11/11 · deslocamento</span><span class="b"><strong class="mono">STM 14:15 → MAO 15:00</strong> (Gol). Sim, o relógio anda só 45 minutos: o voo leva 1h45 e o Amazonas é uma hora atrás do Pará. Você almoça em Santarém e janta em Manaus.</span></li>
+    <li><span class="d">Qui 12 – Sáb 14/11 · Manaus</span><span class="b">Quatro noites. Cabe o encontro das águas e a cidade em um dia, e três noites em lodge de selva — que é o formato que faz Manaus valer a pena.</span></li>
+    <li class="move"><span class="d">Dom 15/11 · volta</span><span class="b"><strong class="mono">MAO 18:25 → GRU 23:10</strong> (LATAM, direto). Manhã livre em Manaus, um voo só, em casa no domingo à noite.</span></li>
+  </ul>
+
+  <div class="facts">
+    <div class="fact"><div class="k">Fuso</div><div class="v">MAO −1h</div><div class="s">Manaus é uma hora atrás de São Paulo e de Santarém</div></div>
+    <div class="fact"><div class="k">STM → Alter</div><div class="v">38 km</div><div class="s">~45 min · táxi R$ 70–100 · Uber ~R$ 60 · ônibus Eixo Forte ~R$ 5</div></div>
+    <div class="fact"><div class="k">Estação</div><div class="v">Vazante</div><div class="s">Novembro = rio baixo = praias no auge em Alter</div></div>
+    <div class="fact"><div class="k">15/11</div><div class="v">Feriado</div><div class="s">Proclamação da República, mas cai no domingo — sem emenda</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">04 — Por que está caro</span>Sete formas de derrubar o preço</h2>
+  <div class="tactics">
+    <div class="tactic"><span class="k">Tática 01</span><h3>Pare de pesquisar GRU→STM</h3><p>Buscar São Paulo–Santarém ida e volta faz o buscador precificar uma origem-destino fina, com duas conexões, pelo pior trecho. Cote <strong>GRU↔MAO ida e volta</strong> e <strong>MAO↔STM ida e volta</strong> como duas compras separadas e some. Quase sempre é bem menos que qualquer tarifa única.</p></div>
+    <div class="tactic"><span class="k">Tática 02</span><h3>Compare com o multi-trecho</h3><p>Feita a conta acima, rode a mesma coisa como trecho múltiplo (GRU→STM, STM→MAO, MAO→GRU) numa companhia só. Às vezes a tarifa combinada ganha. O ponto é comparar as duas estruturas, não escolher no escuro.</p></div>
+    <div class="tactic"><span class="k">Tática 03</span><h3>Compre o trecho amazônico direto na cia</h3><p>MAO–STM é operado só por Azul e Gol. Nos sites e apps deles o mesmo voo costuma sair mais barato que em OTA, e é onde aparecem as promoções regionais.</p></div>
+    <div class="tactic"><span class="k">Tática 04</span><h3>Saia na quinta 05/11 à noite</h3><p>Noite de quinta é o vale de demanda da semana no tronco para Manaus. Você economiza e ainda ganha um dia — vira cinco noites em Alter.</p></div>
+    <div class="tactic"><span class="k">Tática 05</span><h3>Teste a volta na madrugada de segunda</h3><p>Domingo à noite é o pico. Existe um <strong class="mono">MAO 01:15 → GRU</strong> da LATAM: você sai no fim do domingo pelo relógio de quem viaja e pousa segunda de manhã, normalmente por bem menos.</p></div>
+    <div class="tactic"><span class="k">Tática 06</span><h3>Use milhas na ponta fina</h3><p>O trecho curto MAO–STM é onde o preço em dinheiro é pior em relação à distância, e onde resgate em TudoAzul ou Smiles costuma render mais. Guarde o dinheiro para o tronco.</p></div>
+    <div class="tactic"><span class="k">Tática 07</span><h3>Alerta de preço, e não deixe para depois</h3><p>Santarém tem inventário pequeno: poucas cadeiras, então cada venda move a tarifa para cima e ela raramente volta. Crie alerta hoje, mas trate qualquer preço razoável nos próximos dias como o preço.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">05 — Referência de horários</span>A malha das rotas que interessam</h2>
+  <p>Malha publicada, indicativa. As frequências semanais importam tanto quanto os horários: rota de 3×/semana significa que sua data manda no roteiro, e não o contrário.</p>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Trecho</th><th>Cias</th><th>Freq.</th><th>Duração</th><th>Partidas típicas</th></tr></thead>
+      <tbody>
+        <tr><td class="co">GRU → MAO</td><td>Gol, LATAM</td><td class="t">18/sem</td><td class="t">3h55</td><td class="t">07:05 · 07:50 · 12:35 · 18:50 · 22:35 · 23:30</td></tr>
+        <tr><td class="co">MAO → GRU</td><td>Gol, LATAM</td><td class="t">18/sem</td><td class="t">3h55</td><td class="t">01:15 · 16:30 · 17:05 · 18:25</td></tr>
+        <tr><td class="co">MAO → STM</td><td>Azul, Gol</td><td class="t">12/sem</td><td class="t">1h45</td><td class="t">11:25 · 13:15 · 20:00 · 21:25</td></tr>
+        <tr><td class="co">STM → MAO</td><td>Azul, Gol</td><td class="t">9/sem</td><td class="t">1h45</td><td class="t">00:45 · 14:15 · 17:20 · 23:25</td></tr>
+        <tr><td class="co">GRU → BEL</td><td>LATAM, Gol, Azul</td><td class="t">25/sem</td><td class="t">3h25</td><td class="t">00:05 · 21:55 · 22:25 · 23:35</td></tr>
+        <tr><td class="co">BEL → STM</td><td>Azul, Gol</td><td class="t">21/sem</td><td class="t">1h25</td><td class="t">02:00 · 13:15 · 21:55</td></tr>
+        <tr><td class="co">STM → BEL</td><td>Azul, Gol</td><td class="t">21/sem</td><td class="t">1h25</td><td class="t">entre 00:40 e 23:40</td></tr>
+        <tr><td class="co">BSB → STM</td><td>LATAM</td><td class="t">3/sem</td><td class="t">2h35</td><td class="t">21:50 – 23:50 (noturno)</td></tr>
+        <tr><td class="co">CNF → STM</td><td>Azul</td><td class="t">3/sem</td><td class="t">3h20</td><td class="t">rota nova, desde set/2026</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout">
+    <span class="tag">Duas coisas para checar antes de emitir</span>
+    <p><strong>1.</strong> Se o BSB→STM da LATAM opera na sexta 06/11 — são só três frequências semanais e é isso que decide se o plano do red-eye existe.</p>
+    <p><strong>2.</strong> Se o STM→MAO opera no dia que você quer sair de Alter: são 9 voos por semana, ou seja, há dias sem voo. Escolha a data do deslocamento pela malha, não pelo calendário.</p>
+  </div>
+</section>
+
+<footer>
+  Dados de malha compilados de FlightConnections, Skyscanner e sites das companhias em agosto de 2026. Horários e frequências mudam — confirme cada trecho na data exata antes de emitir. Tarifas não foram cotadas ao vivo; as recomendações são de estrutura de roteiro, não de preço.
+</footer>
+
+</div>
