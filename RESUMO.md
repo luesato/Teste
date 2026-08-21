@@ -1,54 +1,76 @@
 # Manaus + Alter do Chão — 06/11 a 15/11/2026
 
-Análise de roteiro aéreo saindo de São Paulo (GRU), sem usar Viracopos.
+Roteiro aéreo saindo de São Paulo (GRU), sem usar Viracopos.
+Cotado ao vivo no Google Flights em 21/08/2026 (BRL, 1 adulto, econômica).
 
-## Conclusão
+## Recomendação
 
-1. **Alter do Chão primeiro, Manaus depois**, usando **Manaus como hub nos dois sentidos**:
-   `GRU → MAO → STM` (Alter, 4 noites) `→ MAO` (Manaus, 4 noites) `→ GRU`.
-   As duas pontas São Paulo são sempre o voo direto GRU–MAO (3h55), e a volta de
-   domingo, que é o trecho caro, é um voo só.
-2. **Nunca terminar em Santarém.** Isso joga uma conexão para o domingo 15/11 e
-   transforma 3h55 de voo em 8–11h porta a porta, num aeroporto com ~3 partidas/dia.
-3. **Escala obrigatória**: não existe GRU–STM direto. Santarém tem só 5 rotas
-   (BEL, MAO, BSB, CNF, TMT). Belém é a mais grossa; Brasília (LATAM, 3×/sem) é a
-   única com voo noturno chegando de madrugada em Santarém.
+**Alter do Chão primeiro, terminando em Manaus**, comprando três trechos avulsos:
 
-## Atenção
+| Data | Trecho | Voos | Horário | Por pessoa |
+|---|---|---|---|---|
+| Sex 06/11 | GRU → BSB → STM | LA 3529 · LA 3840 | 18:05 → 00:25 (sáb) | R$ 1.321 |
+| Qua 11/11 | STM → MAO | G3 1783 | 14:40 → 14:55 | R$ 781 |
+| Dom 15/11 | MAO → GRU | G3 1573 | 16:10 → 21:00 | R$ 1.005 |
+| | | | **Total** | **R$ 3.107** |
+
+Alternativa mais barata: trocar o 1º trecho pelo `G3 1454 + G3 1782, GRU 06:00 → STM 13:45`
+no sábado 07/11 por R$ 1.092 — total **R$ 2.878**, mas chega às 14h45 em vez de ganhar
+o sábado inteiro.
+
+## Comparativo das estruturas (por pessoa)
+
+| Estrutura | Total | vs. mais barata |
+|---|---|---|
+| Alter primeiro, sábado de manhã | R$ 2.878 | — |
+| Manaus primeiro | R$ 2.878 | 0 (volta de 6h20 com escala) |
+| Alter primeiro, noturno de sexta | R$ 3.107 | +229 |
+| Manaus como base (GRU↔MAO + MAO↔STM) | R$ 3.567 | +689 |
+
+## O achado
+
+O voo `G3 1782` sai de Brasília, **para em Manaus** e segue para Santarém — um número
+de voo só. Comprando a tarifa única GRU→STM: **R$ 1.092**. Quebrando em GRU→MAO (R$ 985)
++ MAO→STM (R$ 798): **R$ 1.783**. Mesmos aviões, mesmos assentos, **R$ 691 a mais**.
+
+## O que foi testado e não funciona
+
+- **Mudar o dia da ida**: quinta 05, sexta 06 e sábado 07 saem pelo mesmo preço.
+- **Esticar a volta para segunda**: domingo 15 e segunda 16 idênticos (R$ 1.005).
+  O feriado de 15/11 cai no domingo, então não há emenda puxando demanda.
+
+## Cotações por trecho (21/08/2026)
+
+| Trecho | Data | Voos | Horário | Preço |
+|---|---|---|---|---|
+| GRU → STM | 05, 06 ou 07/11 | G3 1454 · G3 1782 | 06:00 → 13:45 | R$ 1.092 |
+| GRU → STM (noturno) | 06/11 | LA 3529 · LA 3840 | 18:05 → 00:25 | R$ 1.321 |
+| GRU → MAO direto | 06 ou 07/11 | LA 3560/3562/3846 | 06:40 · 20:00 · 23:20 | R$ 985 |
+| MAO → STM direto | — | G3 1782 | 11:35 → 13:45 | R$ 798 |
+| STM → MAO direto | — | G3 1783 | 14:40 → 14:55 | R$ 781 |
+| MAO → GRU direto | 15 ou 16/11 | G3 1573 | 16:10 → 21:00 | R$ 1.005 |
+| STM → GRU | 15/11 | G3 1783 · G3 1573 | 14:40 → 21:00 | R$ 1.095 |
+| GRU ↔ MAO ida e volta | 07–15/11 | — | — | R$ 1.989 |
+| GRU ↔ STM ida e volta | 06–15/11 | — | — | R$ 2.186 |
+| MAO ↔ STM ida e volta | 07–11/11 | — | — | R$ 1.578 |
+
+## Notas
 
 - **05/11/2026 é quinta-feira**, não sexta. A sexta é 06/11.
-  Sair na quinta à noite tende a ser mais barato e ganha um dia.
-- Sem Viracopos, a Azul sai do trecho GRU–MAO (a operação dela é VCP).
-  Restam Gol e LATAM no tronco; a Azul volta se a escala for Belém.
 - Manaus é UTC−4: uma hora atrás de São Paulo e de Santarém.
-
-## Malha de referência (ago/2026, indicativa)
-
-| Trecho | Cias | Freq. | Duração | Partidas típicas |
-|---|---|---|---|---|
-| GRU → MAO | Gol, LATAM | 18/sem | 3h55 | 07:05 · 07:50 · 12:35 · 18:50 · 22:35 · 23:30 |
-| MAO → GRU | Gol, LATAM | 18/sem | 3h55 | 01:15 · 16:30 · 17:05 · 18:25 |
-| MAO → STM | Azul, Gol | 12/sem | 1h45 | 11:25 · 13:15 · 20:00 · 21:25 |
-| STM → MAO | Azul, Gol | 9/sem | 1h45 | 00:45 · 14:15 · 17:20 · 23:25 |
-| GRU → BEL | LATAM, Gol, Azul | 25/sem | 3h25 | 00:05 · 21:55 · 22:25 · 23:35 |
-| BEL → STM | Azul, Gol | 21/sem | 1h25 | 02:00 · 13:15 · 21:55 |
-| BSB → STM | LATAM | 3/sem | 2h35 | 21:50–23:50 (noturno) |
-| CNF → STM | Azul | 3/sem | 3h20 | rota nova desde set/2026 |
-
-## Táticas de preço
-
-1. Cotar `GRU↔MAO` e `MAO↔STM` como duas compras separadas, e só depois comparar
-   com o multi-trecho. Buscar GRU→STM direto é o que infla a tarifa.
-2. Comprar o trecho amazônico no site/app da Azul ou Gol.
-3. Sair quinta 05/11 à noite em vez de sexta.
-4. Testar a volta no `MAO 01:15 → GRU` da LATAM (madrugada de segunda).
-5. Usar milhas na ponta fina (MAO–STM), dinheiro no tronco.
-6. Alerta de preço, mas STM tem inventário pequeno — a tarifa raramente cai.
+- Santarém → Alter do Chão: 38 km, ~45 min. Táxi R$ 70–100, Uber ~R$ 60, ônibus ~R$ 5.
+- Trechos avulsos não despacham bagagem de ponta a ponta.
+- Novembro é vazante do Tapajós — as praias de Alter estão no auge.
 
 ## A confirmar antes de emitir
 
-- Se o `BSB → STM` da LATAM opera na sexta 06/11 (só 3 frequências semanais).
-- Se o `STM → MAO` opera no dia escolhido para sair de Alter (9 voos/semana).
+- Se o `LA 3840 BSB→STM` opera na sexta 06/11 (só 3 frequências semanais).
+- Se o `G3 1783 STM→MAO` opera na quarta 11/11 (9 voos/semana, há dias sem voo).
 
-Fontes: FlightConnections, Skyscanner e sites das companhias, consultados em ago/2026.
-Tarifas não foram cotadas ao vivo — a análise é de estrutura de roteiro.
+## Arquivos
+
+- `Manaus-AlterDoChao-recomendacao-voos.pdf` — relatório de 2 páginas para compartilhar
+- `rota-amazonas.html` — versão web da análise
+- `cotacao/` — scripts de cotação e o JSON bruto das consultas (`quotes.json`)
+
+Tarifa aérea muda sem aviso: confirme preço e horário antes de emitir.

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<title>Manaus + Alter do Chão — recomendação de voos</title>
+<link rel="stylesheet" href="fonts.css">
+<style>
+@page { size: A4; margin: 15mm 14mm 13mm; }
+:root{
+  --ink:#14201f; --text:#26332f; --muted:#5d706b; --faint:#8496908;
+  --faint:#849690; --line:#c9d6d1; --line-soft:#e0e8e5;
+  --tapajos:#0f6f68; --tapajos-lt:#e6f0ee; --silt:#a86a2c; --silt-lt:#f7ecdd;
+  --good:#1f6b45; --bad:#96342c; --surface:#f6f9f8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:"Karla","Liberation Sans",Arial,sans-serif;
+  font-size:9pt; line-height:1.45; color:var(--text); background:#fff;
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+h1,h2,h3{font-family:"Newsreader","Bitstream Charter",Georgia,serif;font-weight:500;margin:0;color:var(--ink)}
+.mono{font-family:"IBM Plex Mono","DejaVu Sans Mono",monospace;font-variant-numeric:tabular-nums}
+strong{font-weight:700;color:var(--ink)}
+p{margin:6px 0}
+
+/* ---- masthead ---- */
+.top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;border-bottom:1px solid var(--line);padding-bottom:9px}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:7pt;letter-spacing:.15em;text-transform:uppercase;color:var(--tapajos);margin-bottom:6px}
+h1{font-size:23pt;line-height:1.04;letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--tapajos)}
+.for{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:7pt;line-height:1.7;color:var(--muted);white-space:nowrap}
+.for b{color:var(--ink);font-weight:600}
+.rivers{height:4px;display:flex;margin-top:9px;border-radius:2px;overflow:hidden}
+.rivers i{display:block;height:100%}
+.rivers i:first-child{flex:3;background:linear-gradient(90deg,#14201f,#0f6f68)}
+.rivers i:last-child{flex:2;background:linear-gradient(90deg,#a86a2c,#d09a55)}
+
+/* ---- verdict ---- */
+.verdict{display:flex;gap:16px;margin:14px 0 0;border:1.2px solid var(--tapajos);border-radius:5px;overflow:hidden}
+.verdict .body{padding:10px 14px;flex:1}
+.verdict .price{background:var(--tapajos-lt);border-left:1px solid var(--tapajos);padding:12px 16px;text-align:right;display:flex;flex-direction:column;justify-content:center;min-width:132px}
+.verdict h2{font-size:12pt;margin-bottom:2px}
+.verdict p{margin:0;font-size:8.6pt;color:var(--muted)}
+.big{font-family:"Newsreader",serif;font-size:20pt;line-height:1;color:var(--ink)}
+.big small{font-size:9pt;font-family:"Karla",sans-serif}
+.sub{font-family:"IBM Plex Mono",monospace;font-size:7pt;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+
+/* ---- sections ---- */
+section{margin-top:11px}
+section>h2,section>.lede{break-after:avoid}
+tr,thead{break-inside:avoid}
+thead{display:table-header-group}
+.box,.facts,.verdict{break-inside:avoid}
+h2.sec{font-size:13pt;margin-bottom:2px}
+h2.sec .n{font-family:"IBM Plex Mono",monospace;font-size:7pt;letter-spacing:.14em;color:var(--faint);display:block;margin-bottom:3px;font-weight:500}
+.lede{color:var(--muted);margin:3px 0 6px;font-size:8.6pt}
+
+/* ---- tables ---- */
+table{border-collapse:collapse;width:100%;font-size:8.3pt;margin-top:5px}
+th,td{text-align:left;padding:3.8px 8px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+thead th{font-family:"IBM Plex Mono",monospace;font-size:6.8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--surface);border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:none}
+table.bx{border:1px solid var(--line);border-radius:4px;overflow:hidden}
+td.n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.r{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{border-top:1.2px solid var(--ink);background:var(--surface);font-weight:700;color:var(--ink)}
+tr.pick td{background:var(--tapajos-lt)}
+.day{font-family:"IBM Plex Mono",monospace;font-size:6.8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--tapajos);display:block}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:6.5pt;letter-spacing:.09em;text-transform:uppercase;padding:1.5px 5px;border-radius:2px;white-space:nowrap}
+.tag.ok{background:var(--tapajos);color:#fff}
+.tag.no{background:var(--silt-lt);color:var(--silt)}
+.tag.lo{background:var(--surface);color:var(--muted);border:1px solid var(--line)}
+
+/* ---- callout ---- */
+.box{background:var(--surface);border:1px solid var(--line);border-left:2.5px solid var(--silt);border-radius:3px;padding:8px 12px;margin:8px 0}
+.box .t{font-family:"IBM Plex Mono",monospace;font-size:6.8pt;letter-spacing:.13em;text-transform:uppercase;color:var(--silt);display:block;margin-bottom:4px}
+.box p{margin:0;font-size:8.7pt}
+.box p+p{margin-top:6px}
+
+.two{display:flex;gap:14px}
+.two>*{flex:1;min-width:0}
+
+ul.chk{margin:6px 0 0;padding:0;list-style:none;font-size:8.7pt}
+ul.chk li{position:relative;padding-left:15px;margin:4px 0;color:var(--muted)}
+ul.chk li::before{content:"—";position:absolute;left:0;color:var(--tapajos);font-family:"IBM Plex Mono",monospace}
+ul.chk li b{color:var(--ink)}
+
+.facts{display:flex;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-top:8px}
+.facts div{background:#fff;padding:7px 9px;flex:1}
+.facts .k{font-family:"IBM Plex Mono",monospace;font-size:6.5pt;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.facts .v{font-family:"Newsreader",serif;font-size:12pt;line-height:1.2;color:var(--ink);margin-top:1px}
+.facts .s{font-size:7.6pt;color:var(--muted);line-height:1.35;margin-top:1px}
+
+footer{margin-top:12px;padding-top:7px;border-top:1px solid var(--line);font-size:7.4pt;color:var(--faint);line-height:1.5}
+</style></head>
+<body>
+
+<div class="top">
+  <div>
+    <div class="kicker">Recomendação de compra · cotado em 21 ago 2026</div>
+    <h1>Manaus + <em>Alter do Chão</em></h1>
+  </div>
+  <div class="for">
+    <b>Octavian &amp; Julio</b><br>
+    Sex 06 nov → Dom 15 nov 2026<br>
+    Saída e retorno por Guarulhos<br>
+    2 pessoas · 9 noites
+  </div>
+</div>
+<div class="rivers"><i></i><i></i></div>
+
+<div class="verdict">
+  <div class="body">
+    <h2>Alter do Chão primeiro, Manaus depois, comprando trechos separados em pontas diferentes</h2>
+    <p>Voar direto de São Paulo para Santarém, atravessar para Manaus no meio da viagem e voltar de Manaus sem escala. Não comprar como “São Paulo–Manaus ida e volta + o pulo para Santarém” — isso custa R$&nbsp;689 a mais por pessoa pelos mesmos assentos.</p>
+  </div>
+  <div class="price">
+    <div class="big">R$ 3.107<small> /pessoa</small></div>
+    <div class="sub">R$ 6.214 os dois</div>
+  </div>
+</div>
+
+<section>
+  <h2 class="sec"><span class="n">01 — O que comprar</span>Os três trechos, com voo e horário</h2>
+  <p class="lede">Preços por pessoa, mais baratos encontrados para cada trecho. Comprar como três trechos avulsos, ou como um multi-trecho na mesma companhia quando os números baterem.</p>
+  <table class="bx">
+    <thead><tr><th>Data</th><th>Trecho</th><th>Voos</th><th>Horário</th><th style="text-align:right">Preço</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="day">Sex 06/11</span><span class="mono">noturno</span></td>
+        <td><strong>GRU → BSB → STM</strong><br><span style="color:var(--muted)">LATAM · escala em Brasília</span></td>
+        <td class="n">LA 3529<br>LA 3840</td>
+        <td class="n">18:05 → 00:25<br><span style="color:var(--muted)">chega sáb 07</span></td>
+        <td class="r">1.321</td>
+      </tr>
+      <tr>
+        <td><span class="day">Qua 11/11</span><span class="mono">tarde</span></td>
+        <td><strong>STM → MAO</strong><br><span style="color:var(--muted)">Gol · direto</span></td>
+        <td class="n">G3 1783</td>
+        <td class="n">14:40 → 14:55<br><span style="color:var(--muted)">1h15 de voo</span></td>
+        <td class="r">781</td>
+      </tr>
+      <tr>
+        <td><span class="day">Dom 15/11</span><span class="mono">tarde</span></td>
+        <td><strong>MAO → GRU</strong><br><span style="color:var(--muted)">Gol · direto</span></td>
+        <td class="n">G3 1573</td>
+        <td class="n">16:10 → 21:00<br><span style="color:var(--muted)">3h50 de voo</span></td>
+        <td class="r">1.005</td>
+      </tr>
+      <tr class="tot"><td colspan="4">Total por pessoa · R$ 6.214 para os dois</td><td class="r">3.107</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box">
+    <span class="t">Alternativa mais barata — manhã de sábado</span>
+    <p>Trocando só o primeiro trecho: <strong class="mono">G3 1454 + G3 1782, GRU 06:00 → STM 13:45</strong> no sábado 07/11, por <strong>R$ 1.092</strong>. O total cai para <strong>R$ 2.878 por pessoa</strong> (R$ 5.756 os dois).</p>
+    <p>A diferença real não é só de R$ 229. O voo noturno de sexta faz vocês chegarem em Alter por volta das 2h da manhã de sábado — precisa da diária desde a noite de sexta e de transfer combinado antes. Em troca, ganham o sábado inteiro de praia em vez de chegar às 14h45. Vale os R$ 229 mais uma diária; a opção de sábado de manhã custa acordar às 4h.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec"><span class="n">02 — Por que essa estrutura</span>As quatro formas de montar, com o preço de cada uma</h2>
+  <table class="bx">
+    <thead><tr><th>Estrutura</th><th>Como fica a volta de domingo</th><th style="text-align:right">Por pessoa</th><th style="text-align:right">vs. mais barata</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Alter primeiro</strong>, saindo sábado de manhã <span class="tag lo">Mais barata</span><br><span style="color:var(--muted)" class="mono">GRU→STM · STM→MAO · MAO→GRU</span></td>
+        <td>Direto, <span class="mono">MAO 16:10 → GRU 21:00</span>. Manhã livre em Manaus.</td>
+        <td class="r">2.878</td><td class="r">—</td>
+      </tr>
+      <tr>
+        <td><strong>Manaus primeiro</strong><br><span style="color:var(--muted)" class="mono">GRU→MAO · MAO→STM · STM→GRU</span></td>
+        <td>Com escala, <span class="mono">STM 14:40 → GRU 21:00</span>, 6h20. Último dia inteiro em trânsito.</td>
+        <td class="r">2.878</td><td class="r">0</td>
+      </tr>
+      <tr class="pick">
+        <td><strong>Alter primeiro</strong>, com o noturno de sexta <span class="tag ok">Recomendada</span><br><span style="color:var(--muted)" class="mono">GRU→STM · STM→MAO · MAO→GRU</span></td>
+        <td>Igual à de cima, e ganha o sábado inteiro em Alter.</td>
+        <td class="r">3.107</td><td class="r">+229</td>
+      </tr>
+      <tr>
+        <td><strong>Manaus como base, ida e volta dupla</strong> <span class="tag no">Evitar</span><br><span style="color:var(--muted)" class="mono">GRU↔MAO + MAO↔STM</span></td>
+        <td>Direto, mas paga-se caro por isso.</td>
+        <td class="r">3.567</td><td class="r">+689</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:8.7pt;margin-top:8px"><strong>Manaus primeiro empata no preço, mas perde no último dia.</strong> Terminar em Santarém troca um voo direto de 3h50 por uma conexão de 6h20 no domingo, num aeroporto com pouco mais de um voo por dia para Manaus — se atrasar, não há plano B no mesmo dia.</p>
+</section>
+
+<section>
+  <h2 class="sec"><span class="n">03 — O achado</span>A mesma poltrona, R$ 691 mais cara</h2>
+  <p class="lede">O trecho mais barato de São Paulo para Santarém é a Gol via Brasília e Manaus. Ele passa dentro de Manaus de qualquer jeito.</p>
+  <table class="bx">
+    <thead><tr><th>Como você compra</th><th>Voos que você pega</th><th style="text-align:right">Preço</th></tr></thead>
+    <tbody>
+      <tr class="pick"><td><strong>Um bilhete: GRU → STM</strong></td><td class="n">G3 1454 · G3 1782</td><td class="r">1.092</td></tr>
+      <tr><td>Dois bilhetes: GRU → MAO</td><td class="n">G3 1454 · G3 1782</td><td class="r">985</td></tr>
+      <tr><td style="padding-left:20px">…mais MAO → STM</td><td class="n">G3 1782</td><td class="r">798</td></tr>
+      <tr class="tot"><td colspan="2">Mesmos aviões, mesmos assentos, comprado errado</td><td class="r">1.783</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:8.7pt;margin-top:8px">O voo <span class="mono">G3 1782</span> sai de Brasília, para em Manaus e segue para Santarém — é um número de voo só. Comprando a tarifa única até Santarém você paga R$ 1.092. Quebrando em dois bilhetes para “dormir em Manaus na ida”, R$ 1.783. <strong>R$ 691 a mais, por pessoa, pelo mesmo voo.</strong></p>
+</section>
+
+<section>
+  <h2 class="sec"><span class="n">04 — O que não adianta tentar</span>Duas economias que não existem nessas datas</h2>
+  <div class="two">
+    <div>
+      <h3 style="font-size:10pt">Mudar o dia da ida</h3>
+      <p style="font-size:8.7pt;margin-top:3px">Cotamos quinta 05, sexta 06 e sábado 07 de novembro. <strong>Preço idêntico nos três dias</strong> — R$ 1.092 para Santarém, R$ 985 para Manaus. A regra de “quinta é mais barato” não vale aqui.</p>
+    </div>
+    <div>
+      <h3 style="font-size:10pt">Esticar a volta para segunda</h3>
+      <p style="font-size:8.7pt;margin-top:3px">Domingo 15 e segunda 16 saem <strong>pelo mesmo preço</strong>, R$ 1.005 de Manaus. Como o feriado de 15/11 cai no domingo, não há emenda puxando a demanda. Voltar domingo não custa nada a mais.</p>
+    </div>
+  </div>
+  <div class="box">
+    <span class="t">O que sobra para negociar</span>
+    <p>O trecho caro em relação à distância é o pulo <strong>Santarém–Manaus</strong>: R$ 781 por 1h15 de voo, e só Azul e Gol operam. É o melhor lugar para usar milhas (TudoAzul ou Smiles) e guardar o dinheiro para os trechos longos. Vale checar o mesmo voo direto nos apps das companhias antes de fechar.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="sec"><span class="n">05 — Como fica a viagem</span>Quatro noites em cada ponta</h2>
+  <table class="bx">
+    <thead><tr><th>Quando</th><th>Onde</th><th>O quê</th></tr></thead>
+    <tbody>
+      <tr><td class="n">Sáb 07 – Ter 10</td><td><strong>Alter do Chão</strong><br><span style="color:var(--muted)">4 noites</span></td><td>Novembro é vazante do Tapajós: as praias de areia branca estão todas expostas, é o auge do ano. Ilha do Amor, Lago Verde, Ponta de Pedras e um dia na Floresta Nacional do Tapajós.</td></tr>
+      <tr><td class="n">Qua 11 – Sáb 14</td><td><strong>Manaus</strong><br><span style="color:var(--muted)">4 noites</span></td><td>Encontro das Águas e a cidade em um dia; as outras três noites em lodge de selva, que é o formato que faz Manaus valer a pena.</td></tr>
+    </tbody>
+  </table>
+  <div class="facts">
+    <div><div class="k">Fuso</div><div class="v">MAO −1h</div><div class="s">Manaus é uma hora atrás de São Paulo e de Santarém. Por isso o voo de 1h15 chega 15 min depois no relógio.</div></div>
+    <div><div class="k">Santarém → Alter</div><div class="v">38 km</div><div class="s">~45 min de carro. Táxi R$ 70–100, Uber ~R$ 60, ônibus Eixo Forte ~R$ 5. Chegando 00:25, combinar transfer antes.</div></div>
+    <div><div class="k">Bagagem</div><div class="v">3 bilhetes</div><div class="s">Trechos separados não despacham bagagem de ponta a ponta. Retirar e reapresentar em Santarém e em Manaus.</div></div>
+  </div>
+</section>
+
+<footer>
+  Cotações obtidas no Google Flights em 21 de agosto de 2026 — em reais, um adulto, econômica, saindo e chegando em Guarulhos (Viracopos excluído a pedido). Tarifa aérea muda sem aviso: confirmar preço e horário antes de emitir. Horários em hora local de cada aeroporto.
+</footer>
+
+</body></html>

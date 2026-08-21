@@ -192,7 +192,7 @@ td.co{font-weight:500}
 .days .b{display:block;margin-top:2px}
 
 /* ---------- tactics ---------- */
-.tactics{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:22px}
+.tactics{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:14px;margin-top:22px}
 .tactic{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 18px 20px}
 .tactic .k{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;color:var(--silt);text-transform:uppercase}
 .tactic h3{font-size:1.02rem;margin:7px 0 6px}
@@ -210,9 +210,9 @@ footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:v
 <div class="wrap">
 
 <header class="masthead">
-  <p class="eyebrow"><span>Sex 06 nov → Dom 15 nov 2026</span><span class="dot"></span><span>São Paulo · GRU</span><span class="dot"></span><span>9 noites</span></p>
+  <p class="eyebrow"><span>Sex 06 nov → Dom 15 nov 2026</span><span class="dot"></span><span>São Paulo · GRU</span><span class="dot"></span><span>Cotado ao vivo em 21 ago 2026</span></p>
   <h1>Alter primeiro<br>ou <em>Manaus primeiro?</em></h1>
-  <p class="standfirst">Não existe voo direto de São Paulo para Santarém. Toda a diferença de preço e de tempo está em <em>qual</em> escala você usa e em <em>que ordem</em> encaixa as duas pontas. A resposta curta: use Manaus como seu único hub, faça Alter do Chão primeiro, e volte de Manaus sem escala.</p>
+  <p class="standfirst">Não existe voo direto de São Paulo para Santarém, então a escala é obrigatória e a ordem das duas pontas é uma escolha de verdade. Com os preços reais na mesa, a resposta é: <em>Alter do Chão primeiro</em>, comprando a tarifa única até Santarém — e nunca como “São Paulo–Manaus ida e volta mais o pulo para Santarém”, que custa R$&nbsp;689 a mais por pessoa pelos mesmos assentos.</p>
   <div class="rivers"><i></i><i></i></div>
 </header>
 
@@ -220,145 +220,161 @@ footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:v
   <div class="callout">
     <span class="tag">Antes de comprar — confira a data</span>
     <p><strong>05/11/2026 é uma quinta-feira, não sexta.</strong> A sexta é 06/11 e o sábado 07/11. O retorno em 15/11 é domingo, esse está certo.</p>
-    <p>Se der para sair mesmo na <strong>quinta 05/11 à noite</strong>, aproveite: quinta é historicamente a noite mais barata da semana para o trecho São Paulo–Manaus, e você ganha um dia inteiro no destino. Todo o plano abaixo simplesmente anda um dia para trás.</p>
   </div>
 </section>
 
 <section>
-  <h2><span class="num">01 — O mapa do problema</span>Santarém só tem cinco rotas no mundo</h2>
-  <p>Alter do Chão se acessa por Santarém (STM), a 38 km. O aeroporto de Santarém recebe cerca de 42 voos por semana, de exatamente cinco origens. É isso que faz o preço parecer absurdo: não é um mercado com concorrência, é uma ponta fina.</p>
+  <h2><span class="num">01 — Cotação ao vivo</span>Quanto custa cada trecho, de verdade</h2>
+  <p>Preços por pessoa, econômica, mais baratos encontrados no Google Flights em 21 de agosto de 2026. Tarifa aérea muda sem aviso — confirme antes de emitir.</p>
 
   <div class="tablewrap">
     <table>
-      <thead><tr><th>Origem direta para STM</th><th>Companhias</th><th>Frequência</th><th>Serve como escala?</th></tr></thead>
+      <thead><tr><th>Trecho</th><th>Data</th><th>Voos</th><th>Horário</th><th style="text-align:right">Por pessoa</th></tr></thead>
       <tbody>
-        <tr><td class="co">Belém (BEL)</td><td>Azul, Gol</td><td class="t">~21 /sem</td><td>Sim — a mais grossa</td></tr>
-        <tr><td class="co">Manaus (MAO)</td><td>Azul, Gol</td><td class="t">~12 /sem</td><td>Sim — e é o seu destino</td></tr>
-        <tr><td class="co">Brasília (BSB)</td><td>LATAM</td><td class="t">3 /sem</td><td>Sim — único red-eye até STM</td></tr>
-        <tr><td class="co">Belo Horizonte (CNF)</td><td>Azul</td><td class="t">3 /sem</td><td>Rota nova, desde set/2026</td></tr>
-        <tr><td class="co">Porto Trombetas (TMT)</td><td>Azul</td><td class="t">~4 /sem</td><td>Não</td></tr>
+        <tr><td class="co">GRU → BSB → MAO → STM</td><td class="t">06 ou 07/11</td><td class="t">G3 1454 · G3 1782</td><td class="t">06:00 → 13:45</td><td class="t" style="text-align:right">R$ 1.092</td></tr>
+        <tr><td class="co">GRU → BSB → STM <span style="color:var(--tapajos)">(noturno)</span></td><td class="t">06/11</td><td class="t">LA 3529 · LA 3840</td><td class="t">18:05 → 00:25</td><td class="t" style="text-align:right">R$ 1.321</td></tr>
+        <tr><td class="co">GRU → MAO <span style="color:var(--text-3)">direto</span></td><td class="t">06 ou 07/11</td><td class="t">LA 3560 / 3562 / 3846</td><td class="t">06:40 · 20:00 · 23:20</td><td class="t" style="text-align:right">R$ 985</td></tr>
+        <tr><td class="co">MAO → STM <span style="color:var(--text-3)">direto</span></td><td class="t">qualquer dia</td><td class="t">G3 1782</td><td class="t">11:35 → 13:45</td><td class="t" style="text-align:right">R$ 798</td></tr>
+        <tr><td class="co">STM → MAO <span style="color:var(--text-3)">direto</span></td><td class="t">qualquer dia</td><td class="t">G3 1783</td><td class="t">14:40 → 14:55</td><td class="t" style="text-align:right">R$ 781</td></tr>
+        <tr><td class="co">MAO → GRU <span style="color:var(--text-3)">direto</span></td><td class="t">15 ou 16/11</td><td class="t">G3 1573</td><td class="t">16:10 → 21:00</td><td class="t" style="text-align:right">R$ 1.005</td></tr>
+        <tr><td class="co">STM → MAO → GRU</td><td class="t">15/11</td><td class="t">G3 1783 · G3 1573</td><td class="t">14:40 → 21:00</td><td class="t" style="text-align:right">R$ 1.095</td></tr>
       </tbody>
     </table>
   </div>
 
-  <p>De São Paulo, portanto, <strong>a escala é obrigatória</strong> — a pergunta não é "se", é "onde". E há um detalhe que muda o cálculo: sair de Viracopos está fora, e a operação da Azul para Manaus a partir de São Paulo é basicamente VCP. Na prática você fica com <strong>Gol e LATAM no trecho tronco GRU–MAO</strong>, que ainda assim é uma rota gorda: 18 voos por semana, ~3 por dia. A Azul volta a ser opção se a escala for Belém.</p>
-</section>
+  <p>Somando cada estrutura possível de roteiro, por pessoa:</p>
 
-<section>
-  <h2><span class="num">02 — As três formas de montar</span>Compare pelo dia da volta, não pelo da ida</h2>
-  <p>O domingo 15/11 é o trecho caro da viagem. É nele que a estrutura do roteiro se paga ou se perde.</p>
-
-  <article class="opt pick">
-    <div class="opt-head"><span class="badge pick">Recomendado</span><h3>Manaus como hub nos dois sentidos</h3></div>
-    <div class="route">
-      <div class="leg"><span class="node home">GRU</span><span class="arm direct"><span class="lbl">Gol / LATAM</span><span class="bar"></span><span class="dur">3h55 direto</span></span><span class="node">MAO</span><span class="arm direct"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h45</span></span><span class="node stay">STM · Alter</span><span class="arm direct"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h45</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">Gol / LATAM</span><span class="bar"></span><span class="dur">3h55 direto</span></span><span class="node home">GRU</span></div>
-    </div>
-    <p class="why">Você atravessa Manaus na ida sem dormir lá, faz Alter do Chão primeiro, volta para Manaus e fica. As duas pontas São Paulo são sempre o mesmo voo direto e barato, e o domingo é um voo só.</p>
-    <div class="pc">
-      <ul class="up">
-        <li>Volta de domingo sem escala: sai 18h25, pousa em Guarulhos 23h10</li>
-        <li>GRU–MAO é rota tronco com 3 voos/dia — é onde o preço compete</li>
-        <li>Dá para comprar como dois bilhetes separados (ver seção 04)</li>
-        <li>Novembro é seca no Tapajós: as praias de Alter estão no auge logo na chegada</li>
-      </ul>
-      <ul class="down">
-        <li>O sábado da ida é dia de deslocamento inteiro</li>
-        <li>Conexão em Manaus de ~2h25 no mesmo aeroporto (bagagem pode não ser through se forem bilhetes separados)</li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="opt">
-    <div class="opt-head"><span class="badge alt">Se quiser o voo noturno de sexta</span><h3>Red-eye por Brasília, volta por Manaus</h3></div>
-    <div class="route">
-      <div class="leg"><span class="node home">GRU</span><span class="arm"><span class="lbl">LATAM</span><span class="bar"></span><span class="dur">1h40</span></span><span class="node">BSB</span><span class="arm"><span class="lbl">LATAM · 3×/sem</span><span class="bar"></span><span class="dur">2h35 noturno</span></span><span class="node stay">STM · Alter</span><span class="arm direct"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h45</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">Gol / LATAM</span><span class="bar"></span><span class="dur">3h55 direto</span></span><span class="node home">GRU</span></div>
-    </div>
-    <p class="why">É o único jeito de dormir voando e acordar em Alter do Chão. O BSB–STM da LATAM sai entre 21h50 e 23h50 e pousa em Santarém de madrugada. Você chega na pousada por volta das 3h e ganha o sábado inteiro na praia.</p>
-    <div class="pc">
-      <ul class="up">
-        <li>Atende exatamente sua preferência de voo noturno na sexta</li>
-        <li>Ganha um dia cheio comparado ao plano recomendado</li>
-        <li>GRU–BSB tem voo quase de hora em hora — fácil de encaixar</li>
-        <li>Itinerário LATAM inteiro na ida: um bilhete, bagagem despachada até STM</li>
-      </ul>
-      <ul class="down">
-        <li><strong>Só 3× por semana</strong> — precisa confirmar se opera na sexta 06/11</li>
-        <li>Chegada às 3h da manhã: reserve transfer antecipado e diária desde a noite anterior</li>
-        <li>Ida e volta por aeroportos diferentes = tarifa de trecho múltiplo, nem sempre mais barata</li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="opt">
-    <div class="opt-head"><span class="badge no">Evite</span><h3>Manaus primeiro, terminando em Santarém</h3></div>
-    <div class="route">
-      <div class="leg"><span class="node home">GRU</span><span class="arm direct"><span class="lbl">Gol / LATAM</span><span class="bar"></span><span class="dur">3h55 direto</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h45</span></span><span class="node stay">STM · Alter</span><span class="arm"><span class="lbl">Azul / Gol</span><span class="bar"></span><span class="dur">1h25</span></span><span class="node">BEL</span><span class="arm"><span class="lbl">LATAM / Gol</span><span class="bar"></span><span class="dur">3h25</span></span><span class="node home">GRU</span></div>
-    </div>
-    <p class="why">Parece simétrico, mas joga a conexão para o domingo. Você troca um voo direto de 3h55 por uma volta de 8 a 11 horas porta a porta, no dia mais caro, e com pouquíssimo voo de recuperação se algo atrasar — Santarém tem só ~3 partidas por dia para Belém e ~1,3 por dia para Manaus.</p>
-    <div class="pc">
-      <ul class="up">
-        <li>Ida simples: GRU–MAO direto de manhã de sábado, 07h50 → 10h50</li>
-      </ul>
-      <ul class="down">
-        <li>Volta com escala no domingo caro — é onde a tarifa explode</li>
-        <li>Último dia perdido em aeroporto</li>
-        <li>Risco de perder a conexão numa ponta fina, sem voo alternativo no mesmo dia</li>
-      </ul>
-    </div>
-  </article>
-
-  <div class="callout">
-    <span class="tag">Variante que vale considerar</span>
-    <p>Se a escala em <strong>Belém</strong> aparecer bem mais barata que Brasília, saiba que os voos BEL→STM saem em três blocos: ~02h00, ~13h15 e ~21h55. Um red-eye GRU→BEL pousa entre 01h30 e 03h15 — ou seja, você perde o das 2h por minutos e espera até as 13h. A saída é sair de São Paulo no <em>fim da tarde</em> de sexta, pousar em Belém à noite, e pegar o BEL→STM das 02h00 (chega 03h25). Ou transformar a espera em passeio: day-use perto do aeroporto, Ver-o-Peso e Estação das Docas de manhã, e voar às 13h15.</p>
+  <div class="facts">
+    <div class="fact"><div class="k">Alter primeiro · noturno de sexta</div><div class="v">R$ 3.107</div><div class="s">1.321 + 781 + 1.005 — a recomendada</div></div>
+    <div class="fact"><div class="k">Alter primeiro · sábado de manhã</div><div class="v">R$ 2.878</div><div class="s">1.092 + 781 + 1.005 — a mais barata</div></div>
+    <div class="fact"><div class="k">Manaus primeiro</div><div class="v">R$ 2.878</div><div class="s">985 + 798 + 1.095 — mesmo preço, volta pior</div></div>
+    <div class="fact"><div class="k">Manaus como base</div><div class="v">R$ 3.567</div><div class="s">1.989 + 1.578 — R$ 689 a mais</div></div>
   </div>
 </section>
 
 <section>
-  <h2><span class="num">03 — O roteiro recomendado, dia a dia</span>Quatro noites em cada ponta</h2>
-  <p>Horários abaixo são os da malha publicada e servem para desenhar o roteiro — confirme cada um na data exata antes de emitir.</p>
+  <h2><span class="num">02 — O achado</span>A mesma poltrona, R$ 691 mais cara</h2>
+  <p>O trecho mais barato de São Paulo para Santarém é a Gol via Brasília. O voo <strong class="mono">G3 1782</strong> sai de Brasília, <em>para em Manaus</em> e segue para Santarém — é um número de voo só. Ou seja: o itinerário mais barato até Alter do Chão já passa dentro de Manaus, você só não desembarca.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Como você compra</th><th>Voos que você pega</th><th style="text-align:right">Preço</th></tr></thead>
+      <tbody>
+        <tr><td class="co">Um bilhete: GRU → STM</td><td class="t">G3 1454 · G3 1782</td><td class="t" style="text-align:right">R$ 1.092</td></tr>
+        <tr><td>Dois bilhetes: GRU → MAO</td><td class="t">G3 1454 · G3 1782</td><td class="t" style="text-align:right">R$ 985</td></tr>
+        <tr><td style="padding-left:34px">…mais MAO → STM</td><td class="t">G3 1782</td><td class="t" style="text-align:right">R$ 798</td></tr>
+        <tr><td class="co" colspan="2">Mesmos aviões, mesmos assentos, comprado errado</td><td class="t" style="text-align:right"><strong>R$ 1.783</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <span class="tag">Correção de rota</span>
+    <p>A intuição de “cote o tronco e o pulo regional separados, porque Santarém é uma ponta fina” é o que normalmente funciona no Brasil — e aqui está errada. Nessas datas a tarifa única até Santarém sai <strong>R$ 691 mais barata por pessoa</strong> que os mesmos dois voos vendidos em bilhetes separados. Compre a tarifa até Santarém.</p>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">03 — As três formas de montar</span>Compare pelo dia da volta</h2>
+
+  <article class="opt pick">
+    <div class="opt-head"><span class="badge pick">Recomendado · R$ 3.107</span><h3>Alter do Chão primeiro, terminando em Manaus</h3></div>
+    <div class="route">
+      <div class="leg"><span class="node home">GRU</span><span class="arm"><span class="lbl">LA 3529 · 18:05</span><span class="bar"></span><span class="dur">escala BSB</span></span><span class="node stay">STM · Alter</span><span class="arm direct"><span class="lbl">G3 1783 · 14:40</span><span class="bar"></span><span class="dur">1h15 direto</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">G3 1573 · 16:10</span><span class="bar"></span><span class="dur">3h50 direto</span></span><span class="node home">GRU</span></div>
+    </div>
+    <p class="why">Sai sexta às 18h05, pousa em Santarém 00h25 de sábado e você acorda em Alter do Chão com o dia inteiro pela frente. Termina em Manaus, de onde a volta de domingo é um voo direto que pousa em Guarulhos às 21h.</p>
+    <div class="pc">
+      <ul class="up">
+        <li>É o único jeito de dormir voando e acordar em Alter — atende a preferência de voo noturno na sexta</li>
+        <li>Volta de domingo direta, com a manhã livre em Manaus</li>
+        <li>Ganha o sábado inteiro de praia em vez de chegar às 14h45</li>
+      </ul>
+      <ul class="down">
+        <li>Chegada às 00h25: precisa da diária desde sexta e transfer combinado antes</li>
+        <li>R$ 229 a mais que a versão de sábado de manhã, mais uma diária</li>
+        <li>O BSB–STM da LATAM opera 3×/semana — confirme que pega a sexta 06/11</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="opt">
+    <div class="opt-head"><span class="badge alt">Mais barata · R$ 2.878</span><h3>Igual, mas saindo sábado de manhã</h3></div>
+    <div class="route">
+      <div class="leg"><span class="node home">GRU</span><span class="arm"><span class="lbl">G3 1454 · 06:00</span><span class="bar"></span><span class="dur">via BSB e MAO</span></span><span class="node stay">STM · Alter</span><span class="arm direct"><span class="lbl">G3 1783 · 14:40</span><span class="bar"></span><span class="dur">1h15 direto</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">G3 1573 · 16:10</span><span class="bar"></span><span class="dur">3h50 direto</span></span><span class="node home">GRU</span></div>
+    </div>
+    <p class="why">Mesma estrutura, trocando só o primeiro trecho: Gol às 06h00 de sábado, pousando em Santarém 13h45. Tudo Gol, o que permite comprar em multi-trecho e despachar bagagem de ponta a ponta.</p>
+    <div class="pc">
+      <ul class="up">
+        <li>R$ 458 mais barato para os dois</li>
+        <li>Os três trechos na Gol: um bilhete só, uma política de bagagem</li>
+        <li>Chega de dia, sem transfer de madrugada</li>
+      </ul>
+      <ul class="down">
+        <li>Acordar às 4h no sábado</li>
+        <li>Perde a tarde de sábado em Alter — chega 14h45</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="opt">
+    <div class="opt-head"><span class="badge no">Evite · R$ 3.567</span><h3>Manaus como base, ida e volta dupla</h3></div>
+    <div class="route">
+      <div class="leg"><span class="node home">GRU</span><span class="arm direct"><span class="lbl">ida e volta</span><span class="bar"></span><span class="dur">R$ 1.989</span></span><span class="node stay">MAO · Manaus</span><span class="arm direct"><span class="lbl">ida e volta</span><span class="bar"></span><span class="dur">R$ 1.578</span></span><span class="node stay">STM · Alter</span></div>
+    </div>
+    <p class="why">Comprar São Paulo–Manaus ida e volta e, por cima, Manaus–Santarém ida e volta. Parece a montagem mais lógica e é a mais cara: R$ 689 a mais por pessoa, R$ 1.378 para os dois, sem nenhum ganho de conforto.</p>
+    <div class="pc">
+      <ul class="up"><li>Ida e volta simples de entender, tudo direto</li></ul>
+      <ul class="down">
+        <li>O mais caro de todos, e por uma margem grande</li>
+        <li>Obriga a dormir em Manaus na ida ou a esperar 9h no aeroporto</li>
+      </ul>
+    </div>
+  </article>
+
+  <p><strong>E “Manaus primeiro”?</strong> Empata no preço — R$ 2.878, exatamente igual — mas termina em Santarém. A volta de domingo vira <span class="mono">STM 14:40 → MAO → GRU 21:00</span>, 6h20 com escala, num aeroporto com pouco mais de um voo por dia para Manaus. Mesmo dinheiro, último dia pior e sem plano B se atrasar.</p>
+</section>
+
+<section>
+  <h2><span class="num">04 — O roteiro</span>Quatro noites em cada ponta</h2>
   <ul class="days">
-    <li class="move"><span class="d">Sáb 07/11 · deslocamento</span><span class="b"><strong class="mono">GRU 07:50 → MAO 10:50</strong> (LATAM/Gol, direto). Conexão de 2h25. <strong class="mono">MAO 13:15 → STM 16:00</strong> (Azul). Transfer 45 min e você chega em Alter do Chão a tempo do pôr do sol na Ilha do Amor.</span></li>
-    <li><span class="d">Dom 08 – Ter 10/11 · Alter do Chão</span><span class="b">Quatro noites. Novembro é vazante do Tapajós: as praias de areia branca estão todas expostas, é a melhor época do ano. Dá para encaixar Lago Verde, Ponta de Pedras e um dia na Floresta Nacional do Tapajós.</span></li>
-    <li class="move"><span class="d">Qua 11/11 · deslocamento</span><span class="b"><strong class="mono">STM 14:15 → MAO 15:00</strong> (Gol). Sim, o relógio anda só 45 minutos: o voo leva 1h45 e o Amazonas é uma hora atrás do Pará. Você almoça em Santarém e janta em Manaus.</span></li>
-    <li><span class="d">Qui 12 – Sáb 14/11 · Manaus</span><span class="b">Quatro noites. Cabe o encontro das águas e a cidade em um dia, e três noites em lodge de selva — que é o formato que faz Manaus valer a pena.</span></li>
-    <li class="move"><span class="d">Dom 15/11 · volta</span><span class="b"><strong class="mono">MAO 18:25 → GRU 23:10</strong> (LATAM, direto). Manhã livre em Manaus, um voo só, em casa no domingo à noite.</span></li>
+    <li class="move"><span class="d">Sex 06/11 · noturno</span><span class="b"><strong class="mono">LA 3529 GRU 18:05 → BSB</strong>, depois <strong class="mono">LA 3840 BSB → STM 00:25</strong>. Transfer de 45 min combinado com antecedência e você dorme em Alter do Chão. R$ 1.321.</span></li>
+    <li><span class="d">Sáb 07 – Ter 10/11 · Alter do Chão</span><span class="b">Quatro noites. Novembro é vazante do Tapajós: as praias de areia branca estão todas expostas, é o auge do ano. Ilha do Amor, Lago Verde, Ponta de Pedras e um dia na Floresta Nacional do Tapajós.</span></li>
+    <li class="move"><span class="d">Qua 11/11 · deslocamento</span><span class="b"><strong class="mono">G3 1783 STM 14:40 → MAO 14:55</strong>. O relógio anda só 15 minutos: o voo leva 1h15 e o Amazonas é uma hora atrás do Pará. Almoça em Santarém, janta em Manaus. R$ 781.</span></li>
+    <li><span class="d">Qui 12 – Sáb 14/11 · Manaus</span><span class="b">Quatro noites. Encontro das Águas e a cidade em um dia, e três noites em lodge de selva — que é o formato que faz Manaus valer a pena.</span></li>
+    <li class="move"><span class="d">Dom 15/11 · volta</span><span class="b"><strong class="mono">G3 1573 MAO 16:10 → GRU 21:00</strong>, direto. Manhã livre em Manaus, um voo só, em casa no domingo à noite. R$ 1.005.</span></li>
   </ul>
 
   <div class="facts">
     <div class="fact"><div class="k">Fuso</div><div class="v">MAO −1h</div><div class="s">Manaus é uma hora atrás de São Paulo e de Santarém</div></div>
     <div class="fact"><div class="k">STM → Alter</div><div class="v">38 km</div><div class="s">~45 min · táxi R$ 70–100 · Uber ~R$ 60 · ônibus Eixo Forte ~R$ 5</div></div>
     <div class="fact"><div class="k">Estação</div><div class="v">Vazante</div><div class="s">Novembro = rio baixo = praias no auge em Alter</div></div>
-    <div class="fact"><div class="k">15/11</div><div class="v">Feriado</div><div class="s">Proclamação da República, mas cai no domingo — sem emenda</div></div>
+    <div class="fact"><div class="k">Bagagem</div><div class="v">3 bilhetes</div><div class="s">Trechos avulsos não despacham de ponta a ponta — retirar e reapresentar</div></div>
   </div>
 </section>
 
 <section>
-  <h2><span class="num">04 — Por que está caro</span>Sete formas de derrubar o preço</h2>
+  <h2><span class="num">05 — O que não adianta tentar</span>Duas economias que não existem nessas datas</h2>
   <div class="tactics">
-    <div class="tactic"><span class="k">Tática 01</span><h3>Pare de pesquisar GRU→STM</h3><p>Buscar São Paulo–Santarém ida e volta faz o buscador precificar uma origem-destino fina, com duas conexões, pelo pior trecho. Cote <strong>GRU↔MAO ida e volta</strong> e <strong>MAO↔STM ida e volta</strong> como duas compras separadas e some. Quase sempre é bem menos que qualquer tarifa única.</p></div>
-    <div class="tactic"><span class="k">Tática 02</span><h3>Compare com o multi-trecho</h3><p>Feita a conta acima, rode a mesma coisa como trecho múltiplo (GRU→STM, STM→MAO, MAO→GRU) numa companhia só. Às vezes a tarifa combinada ganha. O ponto é comparar as duas estruturas, não escolher no escuro.</p></div>
-    <div class="tactic"><span class="k">Tática 03</span><h3>Compre o trecho amazônico direto na cia</h3><p>MAO–STM é operado só por Azul e Gol. Nos sites e apps deles o mesmo voo costuma sair mais barato que em OTA, e é onde aparecem as promoções regionais.</p></div>
-    <div class="tactic"><span class="k">Tática 04</span><h3>Saia na quinta 05/11 à noite</h3><p>Noite de quinta é o vale de demanda da semana no tronco para Manaus. Você economiza e ainda ganha um dia — vira cinco noites em Alter.</p></div>
-    <div class="tactic"><span class="k">Tática 05</span><h3>Teste a volta na madrugada de segunda</h3><p>Domingo à noite é o pico. Existe um <strong class="mono">MAO 01:15 → GRU</strong> da LATAM: você sai no fim do domingo pelo relógio de quem viaja e pousa segunda de manhã, normalmente por bem menos.</p></div>
-    <div class="tactic"><span class="k">Tática 06</span><h3>Use milhas na ponta fina</h3><p>O trecho curto MAO–STM é onde o preço em dinheiro é pior em relação à distância, e onde resgate em TudoAzul ou Smiles costuma render mais. Guarde o dinheiro para o tronco.</p></div>
-    <div class="tactic"><span class="k">Tática 07</span><h3>Alerta de preço, e não deixe para depois</h3><p>Santarém tem inventário pequeno: poucas cadeiras, então cada venda move a tarifa para cima e ela raramente volta. Crie alerta hoje, mas trate qualquer preço razoável nos próximos dias como o preço.</p></div>
+    <div class="tactic"><span class="k">Testado</span><h3>Mudar o dia da ida não muda nada</h3><p>Cotamos quinta 05, sexta 06 e sábado 07 de novembro. <strong>Preço idêntico nos três dias</strong>: R$ 1.092 para Santarém, R$ 985 para Manaus. A regra de “noite de quinta é mais barata” não vale nessa malha.</p></div>
+    <div class="tactic"><span class="k">Testado</span><h3>Esticar a volta para segunda também não</h3><p>Domingo 15 e segunda 16 saem <strong>pelo mesmo preço</strong>, R$ 1.005 de Manaus. Como o feriado de 15/11 cai no domingo, não há emenda puxando a demanda. Voltar domingo não custa nada a mais.</p></div>
+    <div class="tactic"><span class="k">O que sobra</span><h3>Milhas no pulo Santarém–Manaus</h3><p>É o trecho caro em relação à distância: R$ 781 por 1h15 de voo, com só Azul e Gol operando. Melhor lugar para queimar TudoAzul ou Smiles e guardar dinheiro para os trechos longos.</p></div>
+    <div class="tactic"><span class="k">O que sobra</span><h3>Comprar direto na companhia</h3><p>Os trechos regionais costumam sair mais baratos no app da Azul e da Gol do que em agência online, e é lá que aparecem as promoções regionais. Vale conferir antes de fechar.</p></div>
   </div>
 </section>
 
 <section>
-  <h2><span class="num">05 — Referência de horários</span>A malha das rotas que interessam</h2>
-  <p>Malha publicada, indicativa. As frequências semanais importam tanto quanto os horários: rota de 3×/semana significa que sua data manda no roteiro, e não o contrário.</p>
+  <h2><span class="num">06 — Referência</span>A malha das rotas que interessam</h2>
+  <p>Santarém tem cinco rotas no mundo e cerca de 42 voos por semana. É isso que sustenta o preço: não é sazonalidade, é uma ponta fina sem concorrência. As frequências importam tanto quanto os horários — rota de 3×/semana significa que a malha manda no roteiro, não o contrário.</p>
   <div class="tablewrap">
     <table>
       <thead><tr><th>Trecho</th><th>Cias</th><th>Freq.</th><th>Duração</th><th>Partidas típicas</th></tr></thead>
       <tbody>
-        <tr><td class="co">GRU → MAO</td><td>Gol, LATAM</td><td class="t">18/sem</td><td class="t">3h55</td><td class="t">07:05 · 07:50 · 12:35 · 18:50 · 22:35 · 23:30</td></tr>
-        <tr><td class="co">MAO → GRU</td><td>Gol, LATAM</td><td class="t">18/sem</td><td class="t">3h55</td><td class="t">01:15 · 16:30 · 17:05 · 18:25</td></tr>
-        <tr><td class="co">MAO → STM</td><td>Azul, Gol</td><td class="t">12/sem</td><td class="t">1h45</td><td class="t">11:25 · 13:15 · 20:00 · 21:25</td></tr>
-        <tr><td class="co">STM → MAO</td><td>Azul, Gol</td><td class="t">9/sem</td><td class="t">1h45</td><td class="t">00:45 · 14:15 · 17:20 · 23:25</td></tr>
+        <tr><td class="co">GRU → MAO</td><td>Gol, LATAM</td><td class="t">18/sem</td><td class="t">3h55</td><td class="t">06:40 · 07:50 · 12:35 · 20:00 · 23:20</td></tr>
+        <tr><td class="co">MAO → GRU</td><td>Gol, LATAM</td><td class="t">18/sem</td><td class="t">3h55</td><td class="t">02:30 · 05:10 · 13:10 · 16:10</td></tr>
+        <tr><td class="co">MAO → STM</td><td>Azul, Gol</td><td class="t">12/sem</td><td class="t">1h45</td><td class="t">11:35 · 13:15 · 20:00 · 21:25</td></tr>
+        <tr><td class="co">STM → MAO</td><td>Azul, Gol</td><td class="t">9/sem</td><td class="t">1h45</td><td class="t">00:45 · 14:40 · 17:20 · 23:25</td></tr>
         <tr><td class="co">GRU → BEL</td><td>LATAM, Gol, Azul</td><td class="t">25/sem</td><td class="t">3h25</td><td class="t">00:05 · 21:55 · 22:25 · 23:35</td></tr>
         <tr><td class="co">BEL → STM</td><td>Azul, Gol</td><td class="t">21/sem</td><td class="t">1h25</td><td class="t">02:00 · 13:15 · 21:55</td></tr>
-        <tr><td class="co">STM → BEL</td><td>Azul, Gol</td><td class="t">21/sem</td><td class="t">1h25</td><td class="t">entre 00:40 e 23:40</td></tr>
         <tr><td class="co">BSB → STM</td><td>LATAM</td><td class="t">3/sem</td><td class="t">2h35</td><td class="t">21:50 – 23:50 (noturno)</td></tr>
         <tr><td class="co">CNF → STM</td><td>Azul</td><td class="t">3/sem</td><td class="t">3h20</td><td class="t">rota nova, desde set/2026</td></tr>
       </tbody>
@@ -366,13 +382,13 @@ footer{margin-top:60px;padding-top:22px;border-top:1px solid var(--line);color:v
   </div>
   <div class="callout">
     <span class="tag">Duas coisas para checar antes de emitir</span>
-    <p><strong>1.</strong> Se o BSB→STM da LATAM opera na sexta 06/11 — são só três frequências semanais e é isso que decide se o plano do red-eye existe.</p>
-    <p><strong>2.</strong> Se o STM→MAO opera no dia que você quer sair de Alter: são 9 voos por semana, ou seja, há dias sem voo. Escolha a data do deslocamento pela malha, não pelo calendário.</p>
+    <p><strong>1.</strong> Se o <span class="mono">LA 3840 BSB→STM</span> opera na sexta 06/11 — são só três frequências semanais e é isso que decide se o plano do noturno existe.</p>
+    <p><strong>2.</strong> Se o <span class="mono">G3 1783 STM→MAO</span> opera na quarta 11/11: são 9 voos por semana, ou seja, há dias sem voo. Escolha a data do deslocamento pela malha, não pelo calendário.</p>
   </div>
 </section>
 
 <footer>
-  Dados de malha compilados de FlightConnections, Skyscanner e sites das companhias em agosto de 2026. Horários e frequências mudam — confirme cada trecho na data exata antes de emitir. Tarifas não foram cotadas ao vivo; as recomendações são de estrutura de roteiro, não de preço.
+  Cotações obtidas no Google Flights em 21 de agosto de 2026 — em reais, um adulto, classe econômica, saindo e chegando em Guarulhos (Viracopos excluído a pedido). Dados de malha compilados de FlightConnections e dos sites das companhias. Tarifa aérea muda sem aviso e as disponibilidades citadas valem para o momento da consulta: confirme preço, horário e dia de operação antes de emitir. Horários em hora local de cada aeroporto.
 </footer>
 
 </div>

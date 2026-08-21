@@ -1,0 +1,11 @@
+import { chromium } from '/opt/node22/lib/node_modules/playwright/index.mjs';
+import fs from 'fs';
+const b = await chromium.launch({args:['--no-sandbox','--disable-dev-shm-usage']});
+const p = await b.newPage();
+await p.goto('file://' + process.cwd() + '/report.html', {waitUntil:'load'});
+await p.evaluate(() => document.fonts.ready);
+await p.waitForTimeout(1200);
+const out = '/home/user/Teste/Manaus-AlterDoChao-recomendacao-voos.pdf';
+await p.pdf({ path: out, format:'A4', printBackground:true, preferCSSPageSize:true });
+await b.close();
+console.log('PDF:', out, fs.statSync(out).size, 'bytes');

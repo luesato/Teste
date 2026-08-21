@@ -1,0 +1,1288 @@
+{
+ "GRU-MAO 07/11-15/11": {
+  "q": "Flights from GRU to MAO on 2026-11-07 through 2026-11-15",
+  "n": 20,
+  "ofertas": [
+   {
+    "preco": 1989,
+    "partida": "06:00",
+    "chegada": "10:45",
+    "duracao": "5 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261107,BSB-MAO-G3-1782-20261107"
+   },
+   {
+    "preco": 1989,
+    "partida": "06:40",
+    "chegada": "09:35",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3560-20261107"
+   },
+   {
+    "preco": 1989,
+    "partida": "20:00",
+    "chegada": "22:55",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3562-20261107"
+   },
+   {
+    "preco": 1989,
+    "partida": "23:20",
+    "chegada": "02:15 (domingo, novembro 8)",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3846-20261107"
+   },
+   {
+    "preco": 2169,
+    "partida": "14:20",
+    "chegada": "17:15",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3296-20261107"
+   }
+  ]
+ },
+ "GRU-MAO 06/11-15/11": {
+  "q": "Flights from GRU to MAO on 2026-11-06 through 2026-11-15",
+  "n": 20,
+  "ofertas": [
+   {
+    "preco": 1989,
+    "partida": "06:40",
+    "chegada": "09:35",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3560-20261106"
+   },
+   {
+    "preco": 1989,
+    "partida": "09:05",
+    "chegada": "12:05",
+    "duracao": "4 h",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-G3-1572-20261106"
+   },
+   {
+    "preco": 1989,
+    "partida": "12:05",
+    "chegada": "15:00",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3114-20261106"
+   },
+   {
+    "preco": 1989,
+    "partida": "14:20",
+    "chegada": "17:15",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3296-20261106"
+   },
+   {
+    "preco": 1989,
+    "partida": "23:20",
+    "chegada": "02:15 (sábado, novembro 7)",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3846-20261106"
+   }
+  ]
+ },
+ "GRU-MAO 05/11-15/11": {
+  "q": "Flights from GRU to MAO on 2026-11-05 through 2026-11-15",
+  "n": 22,
+  "ofertas": [
+   {
+    "preco": 1989,
+    "partida": "06:00",
+    "chegada": "10:45",
+    "duracao": "5 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261105,BSB-MAO-G3-1782-20261105"
+   },
+   {
+    "preco": 1989,
+    "partida": "12:05",
+    "chegada": "15:00",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3114-20261105"
+   },
+   {
+    "preco": 1989,
+    "partida": "14:20",
+    "chegada": "17:15",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3296-20261105"
+   },
+   {
+    "preco": 1989,
+    "partida": "06:40",
+    "chegada": "09:35",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3560-20261105"
+   },
+   {
+    "preco": 1989,
+    "partida": "19:55",
+    "chegada": "22:45",
+    "duracao": "3 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3562-20261105"
+   }
+  ]
+ },
+ "GRU-MAO 07/11-16/11": {
+  "q": "Flights from GRU to MAO on 2026-11-07 through 2026-11-16",
+  "n": 22,
+  "ofertas": [
+   {
+    "preco": 1989,
+    "partida": "06:00",
+    "chegada": "10:45",
+    "duracao": "5 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261107,BSB-MAO-G3-1782-20261107"
+   },
+   {
+    "preco": 1989,
+    "partida": "06:40",
+    "chegada": "09:35",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3560-20261107"
+   },
+   {
+    "preco": 1989,
+    "partida": "20:00",
+    "chegada": "22:55",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3562-20261107"
+   },
+   {
+    "preco": 1989,
+    "partida": "23:20",
+    "chegada": "02:15 (domingo, novembro 8)",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3846-20261107"
+   },
+   {
+    "preco": 2169,
+    "partida": "14:20",
+    "chegada": "17:15",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3296-20261107"
+   }
+  ]
+ },
+ "GRU-MAO 05/11-16/11": {
+  "q": "Flights from GRU to MAO on 2026-11-05 through 2026-11-16",
+  "n": 22,
+  "ofertas": [
+   {
+    "preco": 1989,
+    "partida": "06:00",
+    "chegada": "10:45",
+    "duracao": "5 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261105,BSB-MAO-G3-1782-20261105"
+   },
+   {
+    "preco": 1989,
+    "partida": "12:05",
+    "chegada": "15:00",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3114-20261105"
+   },
+   {
+    "preco": 1989,
+    "partida": "14:20",
+    "chegada": "17:15",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3296-20261105"
+   },
+   {
+    "preco": 1989,
+    "partida": "06:40",
+    "chegada": "09:35",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3560-20261105"
+   },
+   {
+    "preco": 1989,
+    "partida": "19:55",
+    "chegada": "22:45",
+    "duracao": "3 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3562-20261105"
+   }
+  ]
+ },
+ "MAO-STM 07/11-11/11": {
+  "q": "Flights from MAO to STM on 2026-11-07 through 2026-11-11",
+  "n": 10,
+  "ofertas": [
+   {
+    "preco": 1578,
+    "partida": "11:35",
+    "chegada": "13:45",
+    "duracao": "1 h 10 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-G3-1782-20261107"
+   },
+   {
+    "preco": 1581,
+    "partida": "20:00",
+    "chegada": "22:45",
+    "duracao": "1 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-AD-6100-20261107"
+   },
+   {
+    "preco": 3661,
+    "partida": "08:50",
+    "chegada": "00:25 (domingo, novembro 8)",
+    "duracao": "14 h 35 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-FOR-LA-4510-20261107,FOR-BSB-LA-3741-20261107,BSB-STM-LA-3840-20261107"
+   },
+   {
+    "preco": 3945,
+    "partida": "23:40",
+    "chegada": "00:25 (segunda-feira, novembro 9)",
+    "duracao": "23 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-FOR-LA-4690-20261107,FOR-BSB-LA-3739-20261108,BSB-STM-LA-3840-20261108"
+   },
+   {
+    "preco": 3945,
+    "partida": "23:40",
+    "chegada": "00:25 (segunda-feira, novembro 9)",
+    "duracao": "23 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-FOR-LA-4690-20261107,FOR-BSB-LA-3025-20261108,BSB-STM-LA-3840-20261108"
+   }
+  ]
+ },
+ "MAO-STM 08/11-11/11": {
+  "q": "Flights from MAO to STM on 2026-11-08 through 2026-11-11",
+  "n": 18,
+  "ofertas": [
+   {
+    "preco": 1478,
+    "partida": "13:15",
+    "chegada": "16:00",
+    "duracao": "1 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-AD-4418-20261108"
+   },
+   {
+    "preco": 1478,
+    "partida": "21:25",
+    "chegada": "00:10 (segunda-feira, novembro 9)",
+    "duracao": "1 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-AD-6100-20261108"
+   },
+   {
+    "preco": 1578,
+    "partida": "11:35",
+    "chegada": "13:45",
+    "duracao": "1 h 10 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-G3-1782-20261108"
+   },
+   {
+    "preco": 1736,
+    "partida": "21:55",
+    "chegada": "03:25 (segunda-feira, novembro 9)",
+    "duracao": "4 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-BEL-AD-4856-20261108,BEL-STM-AD-4444-20261109"
+   },
+   {
+    "preco": 3661,
+    "partida": "05:10",
+    "chegada": "00:25 (segunda-feira, novembro 9)",
+    "duracao": "18 h 15 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3861-20261108,GRU-BSB-LA-4579-20261108,BSB-STM-LA-3840-20261108"
+   }
+  ]
+ },
+ "GRU-STM 06/11-15/11": {
+  "q": "Flights from GRU to STM on 2026-11-06 through 2026-11-15",
+  "n": 12,
+  "ofertas": [
+   {
+    "preco": 2186,
+    "partida": "06:00",
+    "chegada": "13:50",
+    "duracao": "7 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261106,BSB-MAO-G3-1782-20261106,MAO-STM-G3-1782-20261106"
+   },
+   {
+    "preco": 2924,
+    "partida": "13:55",
+    "chegada": "00:25 (sábado, novembro 7)",
+    "duracao": "10 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4579-20261106,BSB-STM-LA-3840-20261106"
+   },
+   {
+    "preco": 2974,
+    "partida": "18:05",
+    "chegada": "00:25 (sábado, novembro 7)",
+    "duracao": "6 h 20 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-3529-20261106,BSB-STM-LA-3840-20261106"
+   },
+   {
+    "preco": 3016,
+    "partida": "23:55",
+    "chegada": "00:25 (domingo, novembro 8)",
+    "duracao": "24 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-GIG-LA-3352-20261106,GIG-BSB-LA-3244-20261107,BSB-STM-LA-3840-20261107"
+   },
+   {
+    "preco": 3016,
+    "partida": "23:55",
+    "chegada": "00:25 (domingo, novembro 8)",
+    "duracao": "24 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-GIG-LA-3352-20261106,GIG-BSB-LA-3027-20261107,BSB-STM-LA-3840-20261107"
+   }
+  ]
+ },
+ "GRU-STM 07/11-15/11": {
+  "q": "Flights from GRU to STM on 2026-11-07 through 2026-11-15",
+  "n": 6,
+  "ofertas": [
+   {
+    "preco": 2186,
+    "partida": "06:00",
+    "chegada": "13:45",
+    "duracao": "7 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261107,BSB-MAO-G3-1782-20261107,MAO-STM-G3-1782-20261107"
+   },
+   {
+    "preco": 2974,
+    "partida": "17:55",
+    "chegada": "00:25 (domingo, novembro 8)",
+    "duracao": "6 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-3529-20261107,BSB-STM-LA-3840-20261107"
+   },
+   {
+    "preco": 3202,
+    "partida": "23:55",
+    "chegada": "00:25 (segunda-feira, novembro 9)",
+    "duracao": "24 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4535-20261107,BSB-STM-LA-3840-20261108"
+   }
+  ]
+ },
+ "GRU-STM 06/11 (ida)": {
+  "q": "One-way flights from GRU to STM on 2026-11-06",
+  "erro": "sem resultados",
+  "ofertas": []
+ },
+ "STM-MAO 11/11 (ida)": {
+  "q": "One-way flights from STM to MAO on 2026-11-11",
+  "n": 12,
+  "ofertas": [
+   {
+    "preco": 781,
+    "partida": "14:40",
+    "chegada": "14:55",
+    "duracao": "1 h 15 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-MAO-G3-1783-20261111"
+   },
+   {
+    "preco": 855,
+    "partida": "00:45",
+    "chegada": "01:30",
+    "duracao": "1 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-MAO-AD-6103-20261111"
+   },
+   {
+    "preco": 989,
+    "partida": "04:05",
+    "chegada": "07:35",
+    "duracao": "4 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-AD-4445-20261111,BEL-MAO-AD-4862-20261111"
+   },
+   {
+    "preco": 989,
+    "partida": "15:20",
+    "chegada": "18:50",
+    "duracao": "4 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-AD-2941-20261111,BEL-MAO-AD-4545-20261111"
+   },
+   {
+    "preco": 1094,
+    "partida": "16:30",
+    "chegada": "18:10",
+    "duracao": "2 h 40 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-TMT-AD-4418-20261111,TMT-MAO-AD-4418-20261111"
+   }
+  ]
+ },
+ "MAO-GRU 15/11 (ida)": {
+  "q": "One-way flights from MAO to GRU on 2026-11-15",
+  "n": 18,
+  "ofertas": [
+   {
+    "preco": 1005,
+    "partida": "02:30",
+    "chegada": "07:25",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3847-20261115"
+   },
+   {
+    "preco": 1005,
+    "partida": "05:10",
+    "chegada": "10:05",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3861-20261115"
+   },
+   {
+    "preco": 1005,
+    "partida": "16:10",
+    "chegada": "21:00",
+    "duracao": "3 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-G3-1573-20261115"
+   },
+   {
+    "preco": 1456,
+    "partida": "01:35",
+    "chegada": "06:25",
+    "duracao": "3 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-G3-1545-20261115"
+   },
+   {
+    "preco": 1475,
+    "partida": "13:10",
+    "chegada": "18:05",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3115-20261115"
+   }
+  ]
+ },
+ "MAO-GRU 16/11 (ida)": {
+  "q": "One-way flights from MAO to GRU on 2026-11-16",
+  "n": 20,
+  "ofertas": [
+   {
+    "preco": 1005,
+    "partida": "02:30",
+    "chegada": "07:25",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3847-20261116"
+   },
+   {
+    "preco": 1005,
+    "partida": "05:10",
+    "chegada": "10:05",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3861-20261116"
+   },
+   {
+    "preco": 1005,
+    "partida": "16:55",
+    "chegada": "22:00",
+    "duracao": "4 h 5 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-G3-1573-20261116"
+   },
+   {
+    "preco": 1005,
+    "partida": "18:00",
+    "chegada": "22:55",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3297-20261116"
+   },
+   {
+    "preco": 1315,
+    "partida": "13:10",
+    "chegada": "18:05",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3115-20261116"
+   }
+  ]
+ },
+ "STM-GRU 15/11 (ida)": {
+  "q": "One-way flights from STM to GRU on 2026-11-15",
+  "n": 10,
+  "ofertas": [
+   {
+    "preco": 1095,
+    "partida": "14:40",
+    "chegada": "21:00",
+    "duracao": "6 h 20 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-MAO-G3-1783-20261115,MAO-GRU-G3-1573-20261115"
+   },
+   {
+    "preco": 1559,
+    "partida": "03:45",
+    "chegada": "08:30 (segunda-feira, novembro 16)",
+    "duracao": "28 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BSB-LA-3841-20261115,BSB-GRU-LA-3260-20261116"
+   },
+   {
+    "preco": 1654,
+    "partida": "03:45",
+    "chegada": "10:40",
+    "duracao": "6 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BSB-LA-3841-20261115,BSB-GRU-LA-4768-20261115"
+   },
+   {
+    "preco": 2148,
+    "partida": "14:55",
+    "chegada": "22:45",
+    "duracao": "7 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-G3-1731-20261115,BEL-BSB-G3-1731-20261115,BSB-GRU-G3-1459-20261115"
+   },
+   {
+    "preco": 2573,
+    "partida": "14:55",
+    "chegada": "22:05",
+    "duracao": "7 h 10 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-G3-1731-20261115,BEL-GRU-G3-1517-20261115"
+   }
+  ]
+ },
+ "OW GRU-STM 06/11": {
+  "q": "One-way flights from GRU to STM on 2026-11-06",
+  "n": 14,
+  "ofertas": [
+   {
+    "preco": 1092,
+    "partida": "06:00",
+    "chegada": "13:50",
+    "duracao": "7 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261106,BSB-MAO-G3-1782-20261106,MAO-STM-G3-1782-20261106"
+   },
+   {
+    "preco": 1271,
+    "partida": "13:55",
+    "chegada": "00:25 (sábado, novembro 7)",
+    "duracao": "10 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4579-20261106,BSB-STM-LA-3840-20261106"
+   },
+   {
+    "preco": 1321,
+    "partida": "18:05",
+    "chegada": "00:25 (sábado, novembro 7)",
+    "duracao": "6 h 20 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-3529-20261106,BSB-STM-LA-3840-20261106"
+   },
+   {
+    "preco": 1435,
+    "partida": "23:40",
+    "chegada": "00:25 (domingo, novembro 8)",
+    "duracao": "24 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4535-20261106,BSB-STM-LA-3840-20261107"
+   },
+   {
+    "preco": 1492,
+    "partida": "23:55",
+    "chegada": "00:25 (domingo, novembro 8)",
+    "duracao": "24 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-GIG-LA-3352-20261106,GIG-BSB-LA-3791-20261107,BSB-STM-LA-3840-20261107"
+   }
+  ]
+ },
+ "OW GRU-STM 07/11": {
+  "q": "One-way flights from GRU to STM on 2026-11-07",
+  "n": 6,
+  "ofertas": [
+   {
+    "preco": 1092,
+    "partida": "06:00",
+    "chegada": "13:45",
+    "duracao": "7 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261107,BSB-MAO-G3-1782-20261107,MAO-STM-G3-1782-20261107"
+   },
+   {
+    "preco": 1321,
+    "partida": "17:55",
+    "chegada": "00:25 (domingo, novembro 8)",
+    "duracao": "6 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-3529-20261107,BSB-STM-LA-3840-20261107"
+   },
+   {
+    "preco": 1435,
+    "partida": "23:55",
+    "chegada": "00:25 (segunda-feira, novembro 9)",
+    "duracao": "24 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4535-20261107,BSB-STM-LA-3840-20261108"
+   }
+  ]
+ },
+ "OW GRU-STM 05/11": {
+  "q": "One-way flights from GRU to STM on 2026-11-05",
+  "n": 14,
+  "ofertas": [
+   {
+    "preco": 1092,
+    "partida": "06:00",
+    "chegada": "13:50",
+    "duracao": "7 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261105,BSB-MAO-G3-1782-20261105,MAO-STM-G3-1782-20261105"
+   },
+   {
+    "preco": 1271,
+    "partida": "13:55",
+    "chegada": "00:25 (sexta-feira, novembro 6)",
+    "duracao": "10 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4579-20261105,BSB-STM-LA-3840-20261105"
+   },
+   {
+    "preco": 1321,
+    "partida": "18:05",
+    "chegada": "00:25 (sexta-feira, novembro 6)",
+    "duracao": "6 h 20 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-3529-20261105,BSB-STM-LA-3840-20261105"
+   },
+   {
+    "preco": 1435,
+    "partida": "23:40",
+    "chegada": "00:25 (sábado, novembro 7)",
+    "duracao": "24 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4535-20261105,BSB-STM-LA-3840-20261106"
+   },
+   {
+    "preco": 1492,
+    "partida": "23:55",
+    "chegada": "00:25 (sábado, novembro 7)",
+    "duracao": "24 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-GIG-LA-3352-20261105,GIG-BSB-LA-3791-20261106,BSB-STM-LA-3840-20261106"
+   }
+  ]
+ },
+ "OW GRU-MAO 06/11": {
+  "q": "One-way flights from GRU to MAO on 2026-11-06",
+  "n": 20,
+  "ofertas": [
+   {
+    "preco": 985,
+    "partida": "09:05",
+    "chegada": "12:05",
+    "duracao": "4 h",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-G3-1572-20261106"
+   },
+   {
+    "preco": 985,
+    "partida": "12:05",
+    "chegada": "15:00",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3114-20261106"
+   },
+   {
+    "preco": 985,
+    "partida": "14:20",
+    "chegada": "17:15",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3296-20261106"
+   },
+   {
+    "preco": 985,
+    "partida": "06:40",
+    "chegada": "09:35",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3560-20261106"
+   },
+   {
+    "preco": 985,
+    "partida": "19:55",
+    "chegada": "22:45",
+    "duracao": "3 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3562-20261106"
+   }
+  ]
+ },
+ "OW GRU-MAO 07/11": {
+  "q": "One-way flights from GRU to MAO on 2026-11-07",
+  "n": 22,
+  "ofertas": [
+   {
+    "preco": 985,
+    "partida": "06:00",
+    "chegada": "10:45",
+    "duracao": "5 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261107,BSB-MAO-G3-1782-20261107"
+   },
+   {
+    "preco": 985,
+    "partida": "06:40",
+    "chegada": "09:35",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3560-20261107"
+   },
+   {
+    "preco": 985,
+    "partida": "20:00",
+    "chegada": "22:55",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3562-20261107"
+   },
+   {
+    "preco": 985,
+    "partida": "23:20",
+    "chegada": "02:15 (domingo, novembro 8)",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3846-20261107"
+   },
+   {
+    "preco": 1165,
+    "partida": "14:20",
+    "chegada": "17:15",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-MAO-LA-3296-20261107"
+   }
+  ]
+ },
+ "OW MAO-STM 07/11": {
+  "q": "One-way flights from MAO to STM on 2026-11-07",
+  "n": 10,
+  "ofertas": [
+   {
+    "preco": 798,
+    "partida": "11:35",
+    "chegada": "13:45",
+    "duracao": "1 h 10 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-G3-1782-20261107"
+   },
+   {
+    "preco": 994,
+    "partida": "20:00",
+    "chegada": "22:45",
+    "duracao": "1 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-AD-6100-20261107"
+   },
+   {
+    "preco": 1709,
+    "partida": "08:50",
+    "chegada": "00:25 (domingo, novembro 8)",
+    "duracao": "14 h 35 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-FOR-LA-4510-20261107,FOR-BSB-LA-3741-20261107,BSB-STM-LA-3840-20261107"
+   },
+   {
+    "preco": 1880,
+    "partida": "23:40",
+    "chegada": "00:25 (segunda-feira, novembro 9)",
+    "duracao": "23 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-FOR-LA-4690-20261107,FOR-BSB-LA-3739-20261108,BSB-STM-LA-3840-20261108"
+   },
+   {
+    "preco": 1880,
+    "partida": "23:40",
+    "chegada": "00:25 (segunda-feira, novembro 9)",
+    "duracao": "23 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-FOR-LA-4690-20261107,FOR-BSB-LA-3025-20261108,BSB-STM-LA-3840-20261108"
+   }
+  ]
+ },
+ "OW MAO-STM 08/11": {
+  "q": "One-way flights from MAO to STM on 2026-11-08",
+  "n": 18,
+  "ofertas": [
+   {
+    "preco": 798,
+    "partida": "11:35",
+    "chegada": "13:45",
+    "duracao": "1 h 10 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-G3-1782-20261108"
+   },
+   {
+    "preco": 1006,
+    "partida": "21:55",
+    "chegada": "03:25 (segunda-feira, novembro 9)",
+    "duracao": "4 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-BEL-AD-4856-20261108,BEL-STM-AD-4444-20261109"
+   },
+   {
+    "preco": 1016,
+    "partida": "13:15",
+    "chegada": "16:00",
+    "duracao": "1 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-AD-4418-20261108"
+   },
+   {
+    "preco": 1016,
+    "partida": "21:25",
+    "chegada": "00:10 (segunda-feira, novembro 9)",
+    "duracao": "1 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-AD-6100-20261108"
+   },
+   {
+    "preco": 1709,
+    "partida": "05:10",
+    "chegada": "00:25 (segunda-feira, novembro 9)",
+    "duracao": "18 h 15 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3861-20261108,GRU-BSB-LA-4579-20261108,BSB-STM-LA-3840-20261108"
+   }
+  ]
+ },
+ "OW MAO-STM 11/11": {
+  "q": "One-way flights from MAO to STM on 2026-11-11",
+  "n": 16,
+  "ofertas": [
+   {
+    "preco": 798,
+    "partida": "11:35",
+    "chegada": "13:50",
+    "duracao": "1 h 15 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-G3-1782-20261111"
+   },
+   {
+    "preco": 962,
+    "partida": "13:15",
+    "chegada": "16:00",
+    "duracao": "1 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-STM-AD-4418-20261111"
+   },
+   {
+    "preco": 1006,
+    "partida": "19:35",
+    "chegada": "03:25 (quinta-feira, novembro 12)",
+    "duracao": "6 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-BEL-AD-4861-20261111,BEL-STM-AD-4444-20261112"
+   },
+   {
+    "preco": 1709,
+    "partida": "05:10",
+    "chegada": "00:25 (quinta-feira, novembro 12)",
+    "duracao": "18 h 15 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3861-20261111,GRU-BSB-LA-4579-20261111,BSB-STM-LA-3840-20261111"
+   },
+   {
+    "preco": 1880,
+    "partida": "23:30",
+    "chegada": "00:25 (sexta-feira, novembro 13)",
+    "duracao": "23 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-FOR-LA-4690-20261111,FOR-BSB-LA-3739-20261112,BSB-STM-LA-3840-20261112"
+   }
+  ]
+ },
+ "OW STM-MAO 10/11": {
+  "q": "One-way flights from STM to MAO on 2026-11-10",
+  "n": 10,
+  "ofertas": [
+   {
+    "preco": 781,
+    "partida": "14:40",
+    "chegada": "14:55",
+    "duracao": "1 h 15 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-MAO-G3-1783-20261110"
+   },
+   {
+    "preco": 781,
+    "partida": "14:55",
+    "chegada": "23:00",
+    "duracao": "9 h 5 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-G3-1731-20261110,BEL-BSB-G3-1731-20261110,BSB-MAO-G3-1784-20261110"
+   },
+   {
+    "preco": 1292,
+    "partida": "16:30",
+    "chegada": "18:10",
+    "duracao": "2 h 40 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-TMT-AD-4418-20261110,TMT-MAO-AD-4418-20261110"
+   },
+   {
+    "preco": 1371,
+    "partida": "04:05",
+    "chegada": "07:35",
+    "duracao": "4 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-AD-4445-20261110,BEL-MAO-AD-4862-20261110"
+   },
+   {
+    "preco": 1693,
+    "partida": "02:45",
+    "chegada": "12:25",
+    "duracao": "10 h 40 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BSB-LA-3841-20261110,BSB-MAO-LA-3748-20261110"
+   }
+  ]
+ },
+ "OW STM-MAO 12/11": {
+  "q": "One-way flights from STM to MAO on 2026-11-12",
+  "n": 12,
+  "ofertas": [
+   {
+    "preco": 781,
+    "partida": "14:40",
+    "chegada": "14:55",
+    "duracao": "1 h 15 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-MAO-G3-1783-20261112"
+   },
+   {
+    "preco": 912,
+    "partida": "14:55",
+    "chegada": "23:00",
+    "duracao": "9 h 5 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-G3-1731-20261112,BEL-BSB-G3-1731-20261112,BSB-MAO-G3-1784-20261112"
+   },
+   {
+    "preco": 1258,
+    "partida": "04:05",
+    "chegada": "07:35",
+    "duracao": "4 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-AD-4445-20261112,BEL-MAO-AD-4862-20261112"
+   },
+   {
+    "preco": 1258,
+    "partida": "15:20",
+    "chegada": "18:50",
+    "duracao": "4 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-AD-2941-20261112,BEL-MAO-AD-4545-20261112"
+   },
+   {
+    "preco": 1869,
+    "partida": "02:45",
+    "chegada": "17:15",
+    "duracao": "15 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BSB-LA-3841-20261112,BSB-CGH-LA-3707-20261112,GRU-MAO-LA-3296-20261112"
+   }
+  ]
+ },
+ "OW STM-GRU 15/11": {
+  "q": "One-way flights from STM to GRU on 2026-11-15",
+  "n": 10,
+  "ofertas": [
+   {
+    "preco": 1095,
+    "partida": "14:40",
+    "chegada": "21:00",
+    "duracao": "6 h 20 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-MAO-G3-1783-20261115,MAO-GRU-G3-1573-20261115"
+   },
+   {
+    "preco": 1559,
+    "partida": "03:45",
+    "chegada": "08:30 (segunda-feira, novembro 16)",
+    "duracao": "28 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BSB-LA-3841-20261115,BSB-GRU-LA-3260-20261116"
+   },
+   {
+    "preco": 1654,
+    "partida": "03:45",
+    "chegada": "10:40",
+    "duracao": "6 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BSB-LA-3841-20261115,BSB-GRU-LA-4768-20261115"
+   },
+   {
+    "preco": 2148,
+    "partida": "14:55",
+    "chegada": "22:45",
+    "duracao": "7 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-G3-1731-20261115,BEL-BSB-G3-1731-20261115,BSB-GRU-G3-1459-20261115"
+   },
+   {
+    "preco": 2573,
+    "partida": "14:55",
+    "chegada": "22:05",
+    "duracao": "7 h 10 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "STM-BEL-G3-1731-20261115,BEL-GRU-G3-1517-20261115"
+   }
+  ]
+ },
+ "OW MAO-GRU 15/11": {
+  "q": "One-way flights from MAO to GRU on 2026-11-15",
+  "n": 18,
+  "ofertas": [
+   {
+    "preco": 1005,
+    "partida": "02:30",
+    "chegada": "07:25",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3847-20261115"
+   },
+   {
+    "preco": 1005,
+    "partida": "05:10",
+    "chegada": "10:05",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3861-20261115"
+   },
+   {
+    "preco": 1005,
+    "partida": "16:10",
+    "chegada": "21:00",
+    "duracao": "3 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-G3-1573-20261115"
+   },
+   {
+    "preco": 1456,
+    "partida": "01:35",
+    "chegada": "06:25",
+    "duracao": "3 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-G3-1545-20261115"
+   },
+   {
+    "preco": 1475,
+    "partida": "13:10",
+    "chegada": "18:05",
+    "duracao": "3 h 55 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "MAO-GRU-LA-3115-20261115"
+   }
+  ]
+ },
+ "RT GRU-STM 05-15/11": {
+  "q": "Flights from GRU to STM on 2026-11-05 through 2026-11-15",
+  "n": 8,
+  "ofertas": [
+   {
+    "preco": 2186,
+    "partida": "06:00",
+    "chegada": "13:50",
+    "duracao": "7 h 50 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-G3-1454-20261105,BSB-MAO-G3-1782-20261105,MAO-STM-G3-1782-20261105"
+   },
+   {
+    "preco": 2924,
+    "partida": "13:55",
+    "chegada": "00:25 (sexta-feira, novembro 6)",
+    "duracao": "10 h 30 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4579-20261105,BSB-STM-LA-3840-20261105"
+   },
+   {
+    "preco": 2974,
+    "partida": "18:05",
+    "chegada": "00:25 (sexta-feira, novembro 6)",
+    "duracao": "6 h 20 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-3529-20261105,BSB-STM-LA-3840-20261105"
+   },
+   {
+    "preco": 3202,
+    "partida": "23:40",
+    "chegada": "00:25 (sábado, novembro 7)",
+    "duracao": "24 h 45 min",
+    "cia": null,
+    "escalas": null,
+    "itin": "GRU-BSB-LA-4535-20261105,BSB-STM-LA-3840-20261106"
+   }
+  ]
+ }
+}
