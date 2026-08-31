@@ -1,0 +1,9 @@
+# never commit secrets or captured data
+.env
+shots/
+*.png
+venv/
+.venv/
+__pycache__/
+targets.yaml
+agent-profile/

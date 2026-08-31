@@ -1,0 +1,17 @@
+# Copy to targets.yaml and edit.
+# Each entry becomes shots/<date>/<name>.png
+#
+# settle: seconds to wait after load for charts/JS to render
+# full_page: capture the whole scrollable page, not just the viewport
+
+defaults:
+  settle: 4
+  full_page: true
+
+targets:
+  - name: analytics-overview
+    url: https://analytics.google.com/analytics/web/
+    settle: 8
+
+  - name: crm-pipeline
+    url: https://example-crm.com/dashboard
