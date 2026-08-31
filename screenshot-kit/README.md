@@ -93,6 +93,34 @@ can do to your bill; `--allow` caps where it can go.
 
 ---
 
+## If your apps use Google SSO
+
+Your case: the apps are signed in with your work Google account. That means any
+Chrome profile that can reach them is also signed into Gmail, Drive and anything
+else on that account. You cannot separate them at the cookie level — a Google
+session is a Google session.
+
+The mitigation is the script, not the profile:
+
+- **`shoot.py` is the right tool here.** It sets `allowed_domains` from your
+  `targets.yaml`, so the browser is hard-restricted to those hostnames. Nothing
+  is making navigation decisions — it opens the URLs you listed and nothing else.
+  The Gmail cookie sitting in the jar is never used because nothing ever asks for
+  `mail.google.com`.
+- **Be much more careful with `agent_shot.py`.** There, a model reads page
+  content and decides where to go, and page content can carry instructions aimed
+  at it. Never put `google.com`, `mail.google.com` or `accounts.google.com` in
+  `--allow`. Keep the list to the specific app host.
+- **Prefer a dedicated Chrome profile anyway.** Sign a second profile into the
+  work account and use only that. It does not remove the Gmail reachability, but
+  it keeps your personal logins, extensions and open tabs out of the copy.
+
+If the capture ever needs to touch the mailbox itself, do that through the Gmail
+API with a read-only scope instead. A scoped token you can revoke beats a browser
+session that can do anything you can.
+
+---
+
 ## Which model
 
 `shoot.py` needs none. For `agent_shot.py`:
@@ -123,6 +151,22 @@ Once `shoot.py` works by hand:
 
 Headless (`--headless`) is off by default on purpose: some apps render or behave
 differently without a visible window, and you want to *see* the first few runs.
+
+## macOS notes
+
+- **Use real Google Chrome, not bundled Chromium.** Chrome on macOS encrypts its
+  cookie store with a key held in your login Keychain ("Chrome Safe Storage").
+  A copied profile decrypts fine when it is opened by the same Chrome binary as
+  the same user — which is what `chrome_paths.py` selects by default. Point this
+  at Playwright's Chromium instead and the cookies will not decrypt, so every
+  site looks logged out. macOS may show a Keychain prompt on the first run; allow
+  it.
+- **Quit Chrome properly.** Closing the window is not enough — use Cmd+Q, or the
+  profile copy fails on locked files.
+- Use `python3` if plain `python` is not on your PATH.
+- To schedule it, `cron` works but runs without your GUI session. `launchd` (via
+  a LaunchAgent) is the more reliable choice on macOS, since it runs in your
+  logged-in user context where the Keychain is unlocked.
 
 ## Troubleshooting
 
