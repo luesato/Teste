@@ -19,13 +19,25 @@ list, and an LLM adds cost and failure modes without adding capability.
 
 ## Setup
 
+One command does all of it:
+
 ```bash
-python -m venv .venv
+./setup.sh
+```
+
+It creates the virtualenv, installs the dependencies, and prints your Chrome
+profiles. It opens no browser and captures nothing. Re-running it is safe.
+
+<details>
+<summary>Manual equivalent</summary>
+
+```bash
+python3 -m venv .venv
 source .venv/bin/activate         # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-
-python check_setup.py             # finds Chrome + lists your profiles
+python3 check_setup.py
 ```
+</details>
 
 `check_setup.py` prints the profile folder names (`Default`, `Profile 1`, ...)
 next to the account each one belongs to. You need the folder name.
