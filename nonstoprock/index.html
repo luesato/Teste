@@ -1,0 +1,392 @@
+<title>Non Stop Rock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,400;0,500;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap">
+
+<style>
+  /* ============================================================
+     NON STOP ROCK — identidade visual: cartaz de show serigrafado
+     Papel jornal, tinta preta, vermelho de serigrafia com
+     desalinhamento de registro (aquele "fantasma" colorido).
+     Tema único e proposital: um cartaz impresso não tem modo escuro.
+     ============================================================ */
+  :root {
+    --papel:      #E9E2D5;
+    --papel-alt:  #DED5C4;
+    --tinta:      #16120F;
+    --tinta-fraca:#6A6055;
+    --vermelho:   #CF2417;
+    --ciano:      #1E7F92;
+    --fita:       #E8D98A;
+
+    --escala-xs: 0.78rem;
+    --escala-sm: 0.95rem;
+    --escala-md: 1.08rem;
+    --escala-lg: clamp(1.5rem, 1.1rem + 1.8vw, 2.4rem);
+    --escala-xl: clamp(2.4rem, 1.4rem + 4.6vw, 4.6rem);
+    --gigante:   clamp(3.4rem, 0.5rem + 14vw, 11rem);
+
+    --borda: 2px solid var(--tinta);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background-color: var(--papel);
+    /* trama de meio-tom, como impressão de cartaz */
+    background-image:
+      repeating-radial-gradient(circle at 0 0, rgba(22,18,15,.045) 0 1px, transparent 1px 4px),
+      linear-gradient(174deg, var(--papel) 0%, var(--papel-alt) 100%);
+    color: var(--tinta);
+    font-family: "Barlow", "Helvetica Neue", Arial, sans-serif;
+    font-size: var(--escala-md);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .quadro {
+    max-width: 1080px;
+    margin-inline: auto;
+    padding-inline: 20px;
+  }
+
+  h1, h2, h3 { font-family: "Anton", "Arial Narrow", Impact, sans-serif; font-weight: 400; margin: 0; text-wrap: balance; text-transform: uppercase; letter-spacing: .01em; }
+
+  a { color: var(--tinta); }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--vermelho); outline-offset: 3px; }
+
+  /* --- etiquetas datilografadas ------------------------------ */
+  .etiqueta {
+    font-family: "Courier Prime", "Courier New", monospace;
+    font-size: var(--escala-xs);
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    color: var(--tinta-fraca);
+  }
+
+  /* --- campo a preencher (o que VOCÊ troca) ------------------ */
+  .preencher {
+    display: inline-block;
+    border-bottom: 2px dashed var(--vermelho);
+    color: var(--vermelho);
+    font-family: "Courier Prime", "Courier New", monospace;
+    font-style: normal;
+    padding: 0 .15em;
+  }
+  .bloco-preencher {
+    border: 2px dashed var(--vermelho);
+    color: var(--vermelho);
+    font-family: "Courier Prime", "Courier New", monospace;
+    font-size: var(--escala-sm);
+    padding: 14px 16px;
+    line-height: 1.5;
+  }
+
+  /* --- aviso de rascunho ------------------------------------- */
+  .aviso {
+    background: var(--fita);
+    border-bottom: var(--borda);
+    padding-block: 9px;
+  }
+  .aviso p { margin: 0; font-family: "Courier Prime", "Courier New", monospace; font-size: var(--escala-xs); letter-spacing: .04em; }
+
+  /* --- cabeçalho / cartaz ------------------------------------ */
+  .cartaz { padding-block: clamp(34px, 6vw, 76px) clamp(30px, 5vw, 60px); }
+
+  .titulao {
+    font-size: var(--gigante);
+    line-height: .82;
+    letter-spacing: -.01em;
+    position: relative;
+    display: block;
+  }
+  /* desalinhamento de registro: tinta vermelha e ciano deslocadas */
+  .titulao span { display: block; position: relative; }
+  .titulao span::before,
+  .titulao span::after {
+    content: attr(data-t);
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  .titulao span::before { color: var(--vermelho); transform: translate(-.055em, .035em); mix-blend-mode: multiply; }
+  .titulao span::after  { color: var(--ciano);    transform: translate(.03em, -.025em); mix-blend-mode: multiply; opacity: .55; }
+  .titulao span { color: var(--tinta); z-index: 1; }
+  .titulao span::before, .titulao span::after { z-index: -1; }
+
+  .subcartaz {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 4px solid var(--tinta);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+    align-items: baseline;
+  }
+  .subcartaz p { margin: 0; max-width: 46ch; font-size: var(--escala-lg); font-style: italic; line-height: 1.25; }
+
+  .botoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+  .botao {
+    font-family: "Anton", Impact, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    font-size: var(--escala-sm);
+    text-decoration: none;
+    padding: 12px 22px;
+    border: var(--borda);
+    background: var(--tinta);
+    color: var(--papel);
+    display: inline-block;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .botao.vazado { background: transparent; color: var(--tinta); }
+  .botao:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--vermelho); }
+
+  /* --- seções ------------------------------------------------ */
+  section { padding-block: clamp(38px, 5vw, 64px); border-top: var(--borda); }
+  .cabeca-secao { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; }
+  .cabeca-secao h2 { font-size: var(--escala-xl); line-height: .95; }
+  .cabeca-secao .etiqueta { margin-left: auto; }
+
+  /* --- agenda ------------------------------------------------ */
+  .agenda { display: grid; gap: 0; }
+  .show {
+    display: grid;
+    grid-template-columns: 8.5rem 1fr auto;
+    gap: 6px 20px;
+    align-items: baseline;
+    padding-block: 16px;
+    border-bottom: 1px solid rgba(22,18,15,.28);
+  }
+  .show:first-child { border-top: 1px solid rgba(22,18,15,.28); }
+  .show .data { font-family: "Courier Prime", monospace; font-variant-numeric: tabular-nums; font-weight: 700; letter-spacing: .02em; }
+  .show .local { font-family: "Anton", Impact, sans-serif; text-transform: uppercase; font-size: var(--escala-lg); line-height: 1; }
+  .show .cidade { grid-column: 2; font-size: var(--escala-sm); color: var(--tinta-fraca); }
+  .show .ingresso { font-family: "Anton", Impact, sans-serif; text-transform: uppercase; font-size: var(--escala-sm); letter-spacing: .05em; }
+
+  /* --- banda -------------------------------------------------- */
+  .colunas { display: grid; grid-template-columns: 1.35fr 1fr; gap: 40px; align-items: start; }
+  .bio p { max-width: 62ch; }
+  .formacao { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+  .formacao li { display: flex; justify-content: space-between; gap: 16px; padding-block: 9px; border-bottom: 1px dotted rgba(22,18,15,.4); }
+  .formacao .instrumento { font-family: "Courier Prime", monospace; font-size: var(--escala-xs); text-transform: uppercase; letter-spacing: .12em; color: var(--tinta-fraca); align-self: center; }
+
+  /* --- músicas / fotos: caixas de encaixe --------------------- */
+  .grade-media { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+  .encaixe {
+    border: 2px dashed var(--vermelho);
+    background: rgba(207,36,23,.04);
+    padding: 20px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  .encaixe strong { font-family: "Anton", Impact, sans-serif; text-transform: uppercase; letter-spacing: .04em; color: var(--vermelho); font-weight: 400; font-size: var(--escala-md); }
+  .encaixe span { font-family: "Courier Prime", monospace; font-size: var(--escala-xs); color: var(--tinta-fraca); line-height: 1.5; }
+  .grade-fotos { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+  .moldura { aspect-ratio: 4 / 5; max-width: 100%; }
+  .moldura.larga { aspect-ratio: 4 / 3; grid-column: span 2; }
+
+  /* --- contato ------------------------------------------------ */
+  .contato { display: grid; grid-template-columns: 1fr 1fr; gap: 34px; }
+  .contato dl { margin: 0; display: grid; gap: 14px; }
+  .contato dt { font-family: "Courier Prime", monospace; font-size: var(--escala-xs); text-transform: uppercase; letter-spacing: .16em; color: var(--tinta-fraca); }
+  .contato dd { margin: 2px 0 0; font-size: var(--escala-lg); font-family: "Anton", Impact, sans-serif; text-transform: uppercase; line-height: 1; word-break: break-word; }
+  .caixa-preta { background: var(--tinta); color: var(--papel); padding: 24px; }
+  .caixa-preta h3 { color: var(--papel); font-size: var(--escala-lg); margin-bottom: 10px; }
+  .caixa-preta p { margin: 0 0 12px; font-size: var(--escala-sm); color: #CFC7B8; }
+  .caixa-preta ul { margin: 0; padding-left: 18px; font-family: "Courier Prime", monospace; font-size: var(--escala-xs); color: #CFC7B8; line-height: 1.8; }
+
+  footer { border-top: 4px solid var(--tinta); padding-block: 28px 44px; }
+  footer .etiqueta { display: block; }
+
+  @media (max-width: 720px) {
+    .colunas, .contato { grid-template-columns: 1fr; gap: 28px; }
+    .show { grid-template-columns: 1fr; }
+    .show .cidade { grid-column: 1; }
+    .moldura.larga { grid-column: span 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+<div class="aviso">
+  <div class="quadro"><p>RASCUNHO — tudo que está <span style="color:#CF2417">em vermelho tracejado</span> é campo pra você preencher. Me mande o conteúdo no chat que eu troco.</p></div>
+</div>
+
+<header class="cartaz">
+  <div class="quadro">
+    <p class="etiqueta">Banda de rock &middot; <span class="preencher">cidade / estado</span> &middot; desde <span class="preencher">ano</span></p>
+    <h1 class="titulao">
+      <span data-t="NON">NON</span>
+      <span data-t="STOP">STOP</span>
+      <span data-t="ROCK">ROCK</span>
+    </h1>
+    <div class="subcartaz">
+      <p><span class="preencher">Uma frase que diz quem vocês são no palco — o que a plateia sente nos primeiros 30 segundos.</span></p>
+    </div>
+    <div class="botoes">
+      <a class="botao" href="#musicas">Ouvir</a>
+      <a class="botao vazado" href="#contato">Contratar a banda</a>
+    </div>
+  </div>
+</header>
+
+<section id="agenda">
+  <div class="quadro">
+    <div class="cabeca-secao">
+      <h2>Agenda</h2>
+      <p class="etiqueta">Próximos shows</p>
+    </div>
+    <div class="agenda">
+      <article class="show">
+        <div class="data"><span class="preencher">00 . 00</span></div>
+        <div class="local"><span class="preencher">Nome da casa</span></div>
+        <div class="ingresso"><span class="preencher">Ingresso</span></div>
+        <div class="cidade"><span class="preencher">Cidade — abertura 00h &middot; couvert R$ 00</span></div>
+      </article>
+      <article class="show">
+        <div class="data"><span class="preencher">00 . 00</span></div>
+        <div class="local"><span class="preencher">Nome da casa</span></div>
+        <div class="ingresso"><span class="preencher">Ingresso</span></div>
+        <div class="cidade"><span class="preencher">Cidade — abertura 00h &middot; couvert R$ 00</span></div>
+      </article>
+      <article class="show">
+        <div class="data"><span class="preencher">00 . 00</span></div>
+        <div class="local"><span class="preencher">Nome da casa</span></div>
+        <div class="ingresso"><span class="preencher">Ingresso</span></div>
+        <div class="cidade"><span class="preencher">Cidade — abertura 00h &middot; couvert R$ 00</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="banda">
+  <div class="quadro">
+    <div class="cabeca-secao">
+      <h2>A banda</h2>
+      <p class="etiqueta">Quem sobe no palco</p>
+    </div>
+    <div class="colunas">
+      <div class="bio">
+        <div class="bloco-preencher">
+          PARÁGRAFO 1 — quem é a banda, de onde vem, há quanto tempo toca junto, que repertório entrega (autoral? cover? qual década?).<br><br>
+          PARÁGRAFO 2 — a prova social: onde já tocaram, quantos shows por ano, algum festival, alguma casa conhecida, alguma gravação.<br><br>
+          PARÁGRAFO 3 — pra quem serve: bar, casamento, festa de empresa, festival. Isso é o que faz o contratante te chamar.
+        </div>
+      </div>
+      <div>
+        <p class="etiqueta" style="margin-top:0">Formação</p>
+        <ul class="formacao">
+          <li><span class="preencher">Nome</span> <span class="instrumento">Voz</span></li>
+          <li><span class="preencher">Nome</span> <span class="instrumento">Guitarra</span></li>
+          <li><span class="preencher">Nome</span> <span class="instrumento">Baixo</span></li>
+          <li><span class="preencher">Nome</span> <span class="instrumento">Bateria</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="musicas">
+  <div class="quadro">
+    <div class="cabeca-secao">
+      <h2>Músicas</h2>
+      <p class="etiqueta">Ouça antes de contratar</p>
+    </div>
+    <div class="grade-media">
+      <div class="encaixe">
+        <strong>Player do Spotify</strong>
+        <span>Abra o perfil da banda no Spotify &rarr; &hellip; &rarr; Compartilhar &rarr; Incorporar. Me mande o código que eu encaixo aqui.</span>
+      </div>
+      <div class="encaixe">
+        <strong>Vídeo do YouTube</strong>
+        <span>Um vídeo ao vivo vale mais que dez fotos. Me mande o link do melhor take.</span>
+      </div>
+      <div class="encaixe">
+        <strong>Setlist</strong>
+        <span>A lista do repertório. Contratante de bar decide por aqui.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="quadro">
+    <div class="cabeca-secao">
+      <h2>Fotos</h2>
+      <p class="etiqueta">Material de imprensa</p>
+    </div>
+    <div class="grade-fotos">
+      <div class="encaixe moldura larga">
+        <strong>Foto principal</strong>
+        <span>Horizontal, a banda inteira, palco ou parede com textura.</span>
+      </div>
+      <div class="encaixe moldura">
+        <strong>Retrato 1</strong>
+        <span>Vertical.</span>
+      </div>
+      <div class="encaixe moldura">
+        <strong>Retrato 2</strong>
+        <span>Vertical.</span>
+      </div>
+      <div class="encaixe moldura">
+        <strong>Ao vivo</strong>
+        <span>Público aparecendo.</span>
+      </div>
+      <div class="encaixe moldura">
+        <strong>Detalhe</strong>
+        <span>Mão na guitarra, pedal, prato da bateria.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="quadro">
+    <div class="cabeca-secao">
+      <h2>Contato</h2>
+      <p class="etiqueta">Booking &amp; imprensa</p>
+    </div>
+    <div class="contato">
+      <dl>
+        <div>
+          <dt>WhatsApp</dt>
+          <dd><span class="preencher">(00) 00000-0000</span></dd>
+        </div>
+        <div>
+          <dt>E-mail</dt>
+          <dd><span class="preencher">contato@nonstoprock.com</span></dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd><span class="preencher">@nonstoprock</span></dd>
+        </div>
+      </dl>
+      <div class="caixa-preta">
+        <h3>Press kit</h3>
+        <p>O que todo contratante pede antes de fechar. Quando você tiver, eu monto o PDF:</p>
+        <ul>
+          <li>Release de 1 parágrafo</li>
+          <li>3 fotos em alta resolução</li>
+          <li>Setlist completo</li>
+          <li>Mapa de palco e rider técnico</li>
+          <li>Vídeo ao vivo</li>
+          <li>Valor e tempo de show</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="quadro">
+    <p class="etiqueta">Non Stop Rock &middot; <span class="preencher">cidade</span></p>
+    <p class="etiqueta">Site rascunho — v1</p>
+  </div>
+</footer>
