@@ -1,4 +1,4 @@
-# Viagem Manaus — passagem de contexto (RASCUNHO)
+# Viagem Manaus — passagem de contexto
 
 > Cole este arquivo numa conversa nova (Claude Desktop com Claude in Chrome).
 > Ele resume tudo o que foi pesquisado e decidido até 28/10/2026.
@@ -7,31 +7,34 @@
 
 - **"Abrir site" = abrir aba no meu Chrome** (Claude in Chrome). Se não tiver acesso, **peça** — não contorne com outra ferramenta.
 - Seja direto. Recomendação clara primeiro, detalhes depois.
-- Somos dois amigos: **Octavian** (octavian@creditmatchuae.com) e **Julio**. Quartos/camas separados.
+- Somos dois amigos: **Octavian** (octavian@creditmatchuae.com) e **Julio** (julio.brunetti@gmail.com). Quartos/camas separados.
 - Gostamos de **trilha** e de **vida noturna/bares**. Orçamento consciente: achei os lodges de alto padrão caros demais.
 
 ## Datas
 
 - Chegada em Manaus: **sexta 06/11/2026**.
-- Volta: **domingo 15/11/2026** — ⚠️ eu escrevi "domingo 14/11", mas 14/11 é sábado. **Confirmar.**
+- Volta: **domingo 15/11/2026** (confirmado).
 - Fuso: Manaus é **1h atrás** de São Paulo.
 
 ## Decisões tomadas
 
 | O quê | Decisão | Status |
 |---|---|---|
+| Passagens aéreas | **Compradas** (ida 06/11, volta 15/11). Horários não registrados aqui | ✅ |
 | Destino | Manaus a viagem toda. Alter do Chão **não está nos planos, mas não descartado** | ✅ |
 | Bairro em Manaus | **Vieiralves / Adrianópolis** (bares nas ruas Rio Jutaí e Rio Purus) | ✅ |
 | Hospedagem 06→09/11 (sex, sáb, dom; sai segunda) | **Airbnb "Apto reformado completo centralizado: 3 shoppings"** — 2 quartos, 3 camas, 2 banheiros, nota 5,0 (20), ~R$ 970 as 3 noites, ~1,1 km dos bares. [Anúncio](https://www.airbnb.com.br/rooms/1709161308914046905?check_in=2026-11-06&check_out=2026-11-09&adults=2) | ✅ **Reservado** |
 | Lodge 09→11/11 (seg→qua, 2 noites) | **Objetivo: ver jacaré filhote.** Lado do Solimões (várzea), não Rio Negro. Favorito: **Pousada Juma Lake** | ⏳ **Pedir cotação** |
+| Hospedagem 11→15/11 (qua→dom, 4 noites) | Ainda nada. Provavelmente voltar para Vieiralves/Adrianópolis | ⏳ **Buscar** |
+
+**Resumo: de segunda 09/11 até domingo 15/11 não temos nenhuma hospedagem reservada.**
 
 ## Pendências (fazer nesta ordem)
 
 1. **Lodge 09→11/11**: abrir no Chrome os sites/Booking dos lodges abaixo, checar preço e vaga para 2 adultos, e confirmar o que inclui (pensão completa, traslado, **focagem de jacaré à noite**).
-2. **Noites de 11/11 (qua) a 15/11 (dom) — ainda sem hospedagem.** Provavelmente voltar para Vieiralves/Adrianópolis.
-3. **Endereço do Airbnb no convite do calendário.** Não há evento da viagem no Google Calendar (05–16/11) e a confirmação do Airbnb não chegou no Gmail conectado (deve estar em outra conta). Preciso: o endereço (ou a confirmação) e o e-mail do Julio para criar o evento e convidá-lo.
-4. **Passagens aéreas**: status não registrado aqui — confirmar se já foram compradas.
-5. Passeios: dia de trilha em **Presidente Figueiredo** e torre do **MUSA**.
+2. **Hospedagem 11→15/11 (qua→dom, 4 noites)**: abrir Airbnb e Booking no Chrome, mesma região (Vieiralves/Adrianópolis), 2 adultos, camas separadas. Referências de hotéis na seção Histórico.
+3. **Convite no calendário com o endereço do Airbnb.** Não existe evento da viagem no Google Calendar (05–16/11). Criar o evento da estadia (06→09/11), com o endereço, e convidar o Julio (julio.brunetti@gmail.com). Falta o endereço: a confirmação do Airbnb não está no Gmail conectado (deve estar em outra conta) — abrir a reserva no Airbnb pelo Chrome ou me pedir.
+4. Passeios: dia de trilha em **Presidente Figueiredo** e torre do **MUSA**.
 
 ## Lodges pesquisados (09→11/11, 2 adultos)
 
@@ -80,6 +83,6 @@ Mensagem pronta para WhatsApp:
 
 ## Histórico (para não refazer)
 
-- **Voos** (análise de agosto, quando o plano incluía Alter do Chão): GRU↔MAO ida e volta R$ 1.989; não existe GRU–STM direto. Se Alter voltar ao plano: ir de Manaus a Santarém em voo direto (Azul/Gol, ~1h15) — ex.: G3 1782 MAO 11:35 → STM 13:45, G3 1783 STM 14:40 → MAO 14:55, ~R$ 780–800 cada trecho em agosto. Preços certamente mudaram.
+- **Voos**: já comprados. A análise de agosto (quando o plano incluía Alter do Chão) fica só como referência: GRU↔MAO ida e volta R$ 1.989; não existe GRU–STM direto. Se Alter voltar ao plano: ir de Manaus a Santarém em voo direto (Azul/Gol, ~1h15) — ex.: G3 1782 MAO 11:35 → STM 13:45, G3 1783 STM 14:40 → MAO 14:55, ~R$ 780–800 cada trecho em agosto. Preços certamente mudaram.
 - **Hotéis em Vieiralves/Adrianópolis (06→09/11)**, caso precise para as noites 11→15/11: Millennium Shopping (4★, 4,6, 540 m dos bares, ~R$ 344/noite), Express Vieiralves (3★, 4,2, 250 m, ~R$ 214/noite no site do hotel), Hotel Adrianópolis All Suítes, Blue Tree Premium, Mercure. O Booking saiu ~25% mais caro que o site do hotel. Quality Hotel e Villa Amazônia estavam praticamente esgotados.
 - Arquivos anteriores no repositório `luesato/Teste`, branch `claude/manaus-alter-chao-flights-xy00n4`: `RESUMO.md` e PDF da análise de voos (versão com Alter).
